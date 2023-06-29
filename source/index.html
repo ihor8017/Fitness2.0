@@ -7,7 +7,177 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__info">
+        <p class="logo">Supergym</p>
+        <a class="phone" href="tel:88005555555">8-800-555-55-55</a>
+      </div>
+      <div class="header__main-block">
+        <nav class="header-navigation">
+         <ul class="header-navigation__list">
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="gym.html">Тренажёрный зал</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="group-lessons.html">Групповые занятия</a>
+          </li>
+          <li class="header-navigation__item" >
+            <a class="header-navigation__link" href="cardio-zone.html">Кардио-зона</a>
+          </li>
+         </ul>
+        </nav>
+        <p class="header__town">Омск</p>
+        <h1 class="header__title">Фитнес центр</h1>
+        <a class="header__button button link" href="subscription">Купить абонемент</a>
+        <picture>
+          <source type="img/webp" media="(min-width: 1366px)" srcset="img/header/superman-desktop@1x.webp 1x, img/header/superman-desktop@2x.webp 2x">
+          <source media="(min-width: 1366px)" srcset="img/header/superman-desktop@1x.jpg 1x, img/header/superman-desktop@2x.jpg 2x">
+          <source type="img/webp" srcset="img/header/superman-tablet@1x.webp 1x, img/header/superman-tablet@2x.webp 2x">
+          <img class="header__image" src="img/header/superman-tablet@1x.jpg" srcset="img/header/superman-tablet@2x.jpg 2x" alt="Мужчина в футболке со значком супермена на груди">
+        </picture>
+      </div>
+    </header>
+    <article class="gym">
+      <div class="gym__text-wrapper">
+        <h2 class="gym__title">Тренажерный зал</h2>
+        <p class="gym__info">Просторный зал площадью 900 кв/м</p>
+        <p class="gym__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
+          Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+          В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+          Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <picture>
+        <source type="img/webp" media="(min-width: 1366px)" srcset="img/gym/gym-desktop@1x.webp 1x, img/gym/gym-desktop@2x.webp 2x">
+        <source media="(min-width: 1366px)" srcset="img/gym/gym-desktop@1x.jpg 1x, img/gym/gym-desktop@2x.jpg 2x">
+        <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x">
+        <source type="img/webp" srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
+        <img class="gym__image" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
+      </picture>
+      <picture>
+        <source type="img/webp" media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.webp 1x, img/gym/videopreview-desktop@2x.webp 2x">
+        <source media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.jpg 1x, img/gym/videopreview-desktop@2x.jpg 2x">
+        <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.webp 1x, img/gym/videopreview-tablet@2x.webp 2x">
+        <source media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.jpg 1x, img/gym/videopreview-tablet@2x.jpg 2x">
+        <source type="img/webp" srcset="img/gym/videopreview-mobile@1x.webp 1x, img/gym/videopreview-mobile@2x.webp 2x">
+        <img class="gym__image" src="img/gym/videopreview-mobile@1x.jpg" srcset="img/gym//videopreview-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
+      </picture>
+    </article>
+    <section class="subscription">
+      <h2 class="subscription__title">Абонементы</h2>
+      <ul class="subscription__duration">
+        <li class="subscription__duration-item subscription__duration-item--active">1 месяц</li>
+        <li class="subscription__duration-item">6 месяцев</li>
+        <li class="subscription__duration-item">12 месяцев</li>
+      </ul>
+      <ul class="subscription__plan">
+        <li class="subscription__plan-item card">
+          <p class="card__title">С тренером</p>
+          <p class="card__time">12 занятий</p>
+          <p class="card__price"><span>5000</span>₽</p>
+          <a class="card__button button link">купить абонемент</a>
+        </li>
+        <li class="subscription__plan-item card">
+          <p class="card__title">Дневной</p>
+          <p class="card__time">с 8:00 до 17:00</p>
+          <p class="card__price"><span>1700</span>₽</p>
+          <a class="card__button button link">купить абонемент</a>
+        </li>
+        <li class="subscription__plan-item card">
+          <p class="card__title">Полный день</p>
+          <p class="card__time">с 8:00 до 22:00</p>
+          <p class="card__price"><span>2700</span>₽</p>
+          <a class="card__button button link">купить абонемент</a>
+        </li>
+      </ul>
+    </section>
+    <section class="events">
+      <div class="events__wrapper">
+        <div class="events__text-block">
+          <h2 class="events__title">Super games</h2>
+          <div class="events__day">
+            <p class="events__info">Дата</p>
+            <p class="events__date"><span>7</span><span>Марта</span>2019</p>
+          </div>
+          <div class="events__time">
+            <p class="events__info">Время</p>
+            <p class="events__info-time"></p>
+          </div>
+        </div>
+        <picture>
+          <source type="img/webp" media="(min-width: 1366px)" srcset="img/events/supergame-desktop@1x.webp 1x, img/events/supergame-desktop@2x.webp 2x">
+          <source media="(min-width: 1366px)" srcset="img/events/supergame-desktop@1x.jpg 1x, img/events/supergame-desktop@2x.jpg 2x">
+          <source type="img/webp" media="(min-width: 768px)" srcset="img/events/supergame-tablet@1x.webp 1x, img/events/supergame-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/events/supergame-tablet@1x.jpg 1x, img/events/supergame-tablet@2x.jpg 2x">
+          <source type="img/webp" srcset="img/events/supergame-mobile@1x.webp 1x, img/events/supergame-mobile@2x.webp 2x">
+          <img class="events__image" src="img/events/supergame-mobile@1x.jpg" srcset="img/events/supergame-mobile@2x.jpg 2x" alt="Мужчина опёршийся двумя руками о землю, ударом правой поднял вверх столб белой пыли">
+        </picture>
+      </div>
+    </section>
+    <section class="trainers">
+      <div class="trainers__slider">
+        <figure class="slide slide--1">
+          <picture>
+            <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
+            <img class="slide__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" alt="">
+          </picture>
+          <figcaption>Анна Павлова</figcaption>
+        </figure>
+        <figure class="slide slide--2">
+          <picture>
+            <source type="img/webp" srcset="img/trainer/trainer2-desktop@1x.webp 1x, img/trainer/trainer2-desktop@2x.webp 2x">
+            <img class="slide__image" src="img/trainer/trainer2-desktop@1x.jpg" srcset="img/trainer/trainer2-desktop@2x.jpg 2x" alt="">
+          </picture>
+          <figcaption>Алексей Лавров</figcaption>
+        </figure>
+        <figure class="slide slide--2">
+          <picture>
+            <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
+            <img class="slide__image" src="img/trainer/trainer3-desktop@1x.png" srcset="img/trainer/trainer3-desktop@2x.png 2x" alt="">
+          </picture>
+          <figcaption>
+            <div class="slide__card trainer">
+              <p class="trainer__name">Александр Пашков</p>
+              <p class="trainer__discipline">CrossFit</p>
+              <ul class="trainer__skills-list">
+                <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                <li class="trainer__skills-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="advantages__title">Наши преимущества</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantage-card">
+          <p class="advantage-card__title">Площадь</p>
+          <p class="advantage-card__description">Занимайтесь без очередей и толпучки</p>
+          <p class="advantage-card__info"><span>900</span>кв/м</p>
+        </li>
+        <li class="advantages__item advantage-card">
+          <p class="advantage-card__title">Собственная парковка</p>
+          <p class="advantage-card__description">Вы всегда найдете место для своей машины на нашей парковке</p>
+          <p class="advantage-card__info"><span>70</span>машин</p>
+        </li>
+        <li class="advantages__item advantage-card">
+          <p class="advantage-card__title">Комфорт</p>
+          <p class="advantage-card__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          <p class="advantage-card__info"><span>350</span>мест</p>
+        </li>
+        <li class="advantages__item advantage-card">
+          <p class="advantage-card__title">Тренерский опыт</p>
+          <p class="advantage-card__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          <p class="advantage-card__info"><span>5+</span>лет</p>
+        </li>
+        <li class="advantages__item advantage-card advantage-card--centered">
+          <p class="advantage-card__description">Современные тренажеры на все группы мышц</p>
+          <p class="advantage-card__info"><span>100</span>Тренажеров</p>
+        </li>
+      </ul>
+    </section>
     <main class="main"></main>
     <footer class="footer"></footer>
     <script src="./js/script.js" defer></script>
