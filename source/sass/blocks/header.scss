@@ -1,2 +1,66 @@
 .header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width:  $desktop-width;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 96px;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, $FirstMain 32.23633825778961deg, $SecondaryMain 313.3060026168823deg);
+}
+
+.header__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 98px;
+}
+
+.header__main-block {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__title-wrapper {
+  width: 22%;
+  padding-right: 65px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__town {
+  margin: 0;
+  padding-right: 30px;
+  @extend %title-logofont;
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  color: $BaseWhite;
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 80px;
+  @extend %title-logofont;
+  font-size: 92px;
+  line-height: normal;
+  letter-spacing: 4.6px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $BaseWhite;
+}
+
+.header__image {
+  position: absolute;
+  top: -112px;
 }
