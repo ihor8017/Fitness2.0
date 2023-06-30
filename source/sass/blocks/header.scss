@@ -1,5 +1,10 @@
 .header {
+  background: conic-gradient(from 151deg at 16.03% 39.06%, $FirstMain 32.23633825778961deg, $SecondaryMain 313.3060026168823deg);
+}
+
+.header__wrapper {
   display: flex;
+  box-sizing: border-box;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
@@ -7,8 +12,7 @@
   box-sizing: border-box;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 96px;
-  background: conic-gradient(from 151deg at 16.03% 39.06%, $FirstMain 32.23633825778961deg, $SecondaryMain 313.3060026168823deg);
+  padding-bottom: 24px;
 }
 
 .header__info {
@@ -17,31 +21,30 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 30px;
-  margin-bottom: 98px;
 }
 
 .header__main-block {
   position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+  display: grid;
+  grid-template-columns: 11.7% 22.7% 2fr;
 
-.header__title-wrapper {
-  width: 22.7%;
-  padding-right: 65px;
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  picture {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
 }
 
 .header__town {
+  grid-column-start: 2;
+  grid-column-end: 3;
   margin: 0;
+  margin-top: 98px;
   margin-bottom: 20px;
-  padding-right: 57px;
+  padding-right: 58px;
   @extend %title-logofont;
+  text-align: right;
   font-size: 38px;
   line-height: normal;
   letter-spacing: 1.44px;
@@ -50,6 +53,8 @@
 }
 
 .header__title {
+  grid-column-start: 2;
+  grid-column-end: 3;
   margin: 0;
   margin-bottom: 48px;
   @extend %title-logofont;
@@ -61,23 +66,36 @@
   color: $BaseWhite;
 }
 
+.header__button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: end;
+  width: 88%;
+}
+
 .header__image {
-  position: absolute;
-  top: -120px;
+  position: relative;
+  margin-left: 62px;
   width: 500px;
   height: 556px;
-  background-color: $FirstMain;
+  top: -22px;
+  background-color: $SecondaryMain;
   object-fit: cover;
 }
 
 @media (max-width: $tablet-maxwidth) {
   .header {
-    width: $tablet-width;
+    background: conic-gradient(from 155deg at 20.70% 35.74%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+  }
+
+  .header__wrapper {
+    min-width: $tablet-width;
+    width: 100%;
+    max-width: $tablet-maxwidth;
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 78px;
-    background: conic-gradient(from 155deg at 20.70% 35.74%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
-  }
+}
 
   .header__info {
     padding-top: 33px;
@@ -85,7 +103,7 @@
   }
 
   .header__main-block {
-    justify-content: space-between;
+    grid-template-columns: 20.6% 27.1% 1fr;
   }
   .header__title-wrapper {
     padding-right: 0;
@@ -95,6 +113,7 @@
   .header__town {
     font-size: 25px;
     margin-right: 0;
+    margin-top: 55px;
     margin-bottom: 11px;
     padding-right: 7px;
     letter-spacing: 1.9px;
@@ -109,33 +128,45 @@
 
   .header__image {
     position: static;
-    width: 324px;
-    height: 390px;
+    width: 92%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 556px;
+    margin-left: 30px;
+    object-fit: contain;
+  }
+
+  .header__button {
+    width: 100%;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .header {
-    width: $mobile-width;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 138px;
     background: conic-gradient(from 167deg at 35.31% 34.22%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
   }
 
+  .header__wrapper {
+    min-width: $mobile-width;
+    max-width: $mobile-maxwidth;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 138px;
+  }
+
+  .header__main-block {
+    grid-template-columns: 48.5% 51.5%;
+  }
+
   .header__info {
-    padding-top: 15px;
+    padding-top: 16px;
+    margin-bottom: 16px;
   }
+  .header__button {
+    padding: 18px 83px;
+   }
 
-  .header__title-wrapper {
-    padding-right: 0;
-    padding-top: 52px;
-    margin-right: -82px;
-
-    .header__button {
-      padding: 18px 83px;
-    }
-  }
 
   .header__town {
     margin-bottom: 14px;
@@ -143,13 +174,22 @@
   }
 
   .header__title {
+    position: relative;
+    left: -37px;
     margin-bottom: 23px;
+    margin-right: 20px;
+
+    span {
+      padding-left: 35px;
+    }
   }
 
   .header__button {
     position: absolute;
     width: 290px;
     bottom: -59px;
+    grid-column-start: 1;
+    grid-column-end: 3;
     }
 
   .header__image {

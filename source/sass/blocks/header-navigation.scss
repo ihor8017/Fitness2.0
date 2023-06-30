@@ -1,13 +1,19 @@
+.header-navigation {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 .header-navigation__list {
   list-style: none;
   text-align: right;
   margin: 0;
-  margin-top: 185px;
+  margin-top: 121px;
   padding: 0;
 }
 
 .header-navigation__item {
-  padding-left: 21px;
   font-weight: 400;
 }
 
@@ -39,12 +45,12 @@
   }
 
   .header-navigation__list {
-    margin-top: 183px;
+    margin-top: 91px;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .header-navigation__list {
-    margin-top: 175px;
+    margin-top: 77px;
   }
 }
