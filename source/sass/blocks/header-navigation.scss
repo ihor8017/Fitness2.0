@@ -11,6 +11,24 @@
   font-weight: 400;
 }
 
+.header-navigation__link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 14px;
+  color: $BaseWhite;
+}
+
+.header-navigation__link:hover,
+.header-navigation__link:focus {
+  opacity: 0.6;
+}
+
+.header-navigation__link:active {
+  opacity: 0.3;
+}
+
 @media (max-width: $tablet-maxwidth) {
   .header-navigation {
     margin-right: 27px;
