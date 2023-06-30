@@ -12,3 +12,10 @@
     padding: 0;
   }
 }
+
+@media (max-width: $mobile-maxwidth) {
+  .phone {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+  }
+}

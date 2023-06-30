@@ -24,3 +24,9 @@
     margin-top: 183px;
   }
 }
+
+@media (max-width: $mobile-maxwidth) {
+  .header-navigation__list {
+    margin-top: 175px;
+  }
+}

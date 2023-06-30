@@ -116,3 +116,45 @@
     height: 390px;
   }
 }
+
+@media (max-width: $mobile-maxwidth) {
+  .header {
+    width: $mobile-width;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 138px;
+  }
+
+  .header__info {
+    padding-top: 15px;
+  }
+
+  .header__title-wrapper {
+    padding-right: 0;
+    padding-top: 52px;
+    margin-right: -82px;
+
+    .header__button {
+      padding: 18px 83px;
+    }
+  }
+
+  .header__town {
+    margin-bottom: 14px;
+    padding-right: 0;
+  }
+
+  .header__title {
+    margin-bottom: 23px;
+  }
+
+  .header__button {
+    position: absolute;
+    width: 290px;
+    bottom: -59px;
+    }
+
+  .header__image {
+    display: none;
+  }
+}
