@@ -1,6 +1,14 @@
 .phone {
   @extend %title-logofont;
+  padding: 0 5px;
   font-size: 26px;
   letter-spacing: 0.74px;
   color: $BaseWhite;
+}
+
+@media (max-width: $tablet-maxwidth) {
+  .phone {
+    font-size: 24px;
+    padding: 0;
+  }
 }

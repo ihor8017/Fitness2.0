@@ -6,3 +6,10 @@
   letter-spacing: 0.72px;
   color: $BaseWhite;
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .logo {
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+}

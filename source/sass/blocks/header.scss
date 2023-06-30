@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 30px;
   margin-bottom: 98px;
 }
@@ -24,12 +24,12 @@
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
 .header__title-wrapper {
-  width: 22%;
+  width: 22.7%;
   padding-right: 65px;
   align-self: flex-start;
   display: flex;
@@ -39,9 +39,10 @@
 
 .header__town {
   margin: 0;
-  padding-right: 30px;
+  margin-bottom: 20px;
+  padding-right: 57px;
   @extend %title-logofont;
-  font-size: 48px;
+  font-size: 38px;
   line-height: normal;
   letter-spacing: 1.44px;
   text-transform: uppercase;
@@ -50,7 +51,7 @@
 
 .header__title {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
   @extend %title-logofont;
   font-size: 92px;
   line-height: normal;
@@ -62,5 +63,56 @@
 
 .header__image {
   position: absolute;
-  top: -112px;
+  top: -120px;
+  width: 500px;
+  height: 556px;
+  background-color: $FirstMain;
+  object-fit: cover;
+}
+
+@media (max-width: $tablet-maxwidth) {
+  .header {
+    width: $tablet-width;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 78px;
+  }
+
+  .header__info {
+    padding-top: 33px;
+    margin-bottom: 21px;
+  }
+
+  .header__main-block {
+    justify-content: space-between;
+  }
+  .header__title-wrapper {
+    padding-right: 0;
+    padding-top: 55px;
+  }
+
+  .header__town {
+    font-size: 25px;
+    margin-right: 0;
+    margin-bottom: 11px;
+    padding-right: 7px;
+    letter-spacing: 1.9px;
+  }
+
+  .header__title {
+    margin-bottom: 37px;
+    font-size: 72px;
+    letter-spacing: 3.6px;
+    text-transform: none;
+  }
+
+  .header__button {
+    padding: 18px 33.5px;
+  }
+
+  .header__image {
+    position: static;
+    width: 324px;
+    height: 390px;
+  }
 }

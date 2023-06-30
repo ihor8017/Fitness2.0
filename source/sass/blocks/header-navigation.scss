@@ -1,9 +1,26 @@
-.header-navigation {
-  margin: 0;
-  margin-right: 5px;
-  text-align: right;
-}
-
 .header-navigation__list {
   list-style: none;
+  text-align: right;
+  margin: 0;
+  margin-top: 185px;
+  padding: 0;
+}
+
+.header-navigation__item {
+  padding-left: 21px;
+  font-weight: 400;
+}
+
+@media (max-width: $tablet-maxwidth) {
+  .header-navigation {
+    margin-right: 27px;
+  }
+
+  .header-navigation__item {
+    padding-left: 0;
+  }
+
+  .header-navigation__list {
+    margin-top: 183px;
+  }
 }
