@@ -13,11 +13,16 @@ $SecondaryColor: #003eb7;
 
 $desktop-width: 1366px;
 $tablet-width: 768px;
-$tablet-maxwidth: 1335px;
+$tablet-maxwidth: 1366px;
 $mobile-width: 320px;
-$mobile-maxwidth: 767px;
+$mobile-maxwidth: 767.5px;
+
 %title-logofont {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
+}
+
+@mixin fontSizeCalc($min, $max, $width) {
+  font-size: calc($min + ($max - $min) * (100vw / $width));
 }
