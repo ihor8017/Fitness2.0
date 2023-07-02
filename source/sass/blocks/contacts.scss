@@ -67,3 +67,47 @@
     color: $BaseColor;
   }
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .contacts {
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding: 76px 82px;
+    padding-bottom: 60px;
+    padding-right: 58px;
+    color: $BaseColor;
+  }
+}
+
+.contacts__title {
+  font-size: 46px;
+  margin-left: 50px;
+  margin-bottom: 46px;
+  letter-spacing: -0.4pxpx;
+}
+
+.contacts__list {
+  width: 100%;
+  row-gap: 21px;
+}
+
+.contacts__list::after {
+  top: 8px;
+  left: calc(30% + 128px);
+  height: 129px;
+}
+
+.contacts__item {
+  padding-left: 48px;
+  padding-right: 10px;
+}
+
+.contacts__item-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.contacts__item-description {
+  font-size: 18px;
+}

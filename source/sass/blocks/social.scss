@@ -38,3 +38,14 @@
   padding: 10px
 
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .social {
+    min-width: 100px;
+    margin-top: 5px;
+  }
+
+  .social__item {
+    margin-right: 11px;
+  }
+}

@@ -70,3 +70,14 @@ width: 410px;
   font-size: 14px;
   padding-bottom: 13px;
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .form-lesson {
+    width: calc(100vw - 296px);
+    column-gap: 60px;
+  }
+
+  .form-lesson input {
+    padding-bottom: 5px;
+  }
+}

@@ -15,3 +15,19 @@
   line-height: 156%;
   letter-spacing: 2.32px;
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .lesson {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    box-sizing: border-box;
+    padding:  54px 163px 70px 133px;
+    width: 100%;
+  }
+}
+
+.lesson__title {
+  font-size: 42px;
+  letter-spacing: 1.46px;
+  margin-bottom: 20px;
+}

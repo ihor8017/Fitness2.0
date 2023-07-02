@@ -18,14 +18,14 @@
 
 @media (max-width: $tablet-maxwidth) {
   .logo {
-    @include fontSizeCalc(24px, 36px, $desktop-width);
+   font-size: 24px;
     letter-spacing: 0.48px;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .logo {
-    @include fontSizeCalc(20px, 24px, $tablet-width);
+    font-size: 20px;
     letter-spacing: 0.4px;
   }
 }

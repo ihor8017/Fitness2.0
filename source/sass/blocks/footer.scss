@@ -12,7 +12,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 683px);
-
 }
 
 .footer__botttom-block {
@@ -24,4 +23,18 @@
   letter-spacing: 0.2px;
   margin-right: 30px;
   margin-top: 5px;
+}
+
+@media (max-width: $tablet-maxwidth) {
+  .footer__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__logo {
+    margin-top: 1px;
+    font-size: 24px;
+  }
 }

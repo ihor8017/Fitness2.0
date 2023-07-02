@@ -8,14 +8,14 @@
 
 @media (max-width: $tablet-maxwidth) {
   .phone {
-    @include fontSizeCalc(24px, 26px, $desktop-width);
+    font-size: 24px;
     padding: 0;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .phone {
-    @include fontSizeCalc(20px, 24px, $tablet-width);
+    font-size: 20px;
     letter-spacing: 0.4px;
   }
 }
