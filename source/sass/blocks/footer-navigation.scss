@@ -61,3 +61,22 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .footer-navigation {
+    padding: 40px 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-navigation__list {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   // grid-row-start: 2;
+  }
+}

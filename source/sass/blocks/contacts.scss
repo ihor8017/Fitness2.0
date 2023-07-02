@@ -84,7 +84,7 @@
   font-size: 46px;
   margin-left: 50px;
   margin-bottom: 46px;
-  letter-spacing: -0.4pxpx;
+  letter-spacing: -0.4px;
 }
 
 .contacts__list {
@@ -110,4 +110,44 @@
 
 .contacts__item-description {
   font-size: 18px;
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .contacts {
+    padding: 72px 10px 61px;
+  }
+
+  .contacts__title {
+    margin-left: 5px;
+    margin-bottom: 42px;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .contacts__list {
+    grid-template-columns: 1fr ;
+    row-gap: 19px;
+  }
+
+  .contacts__item {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .contacts__item--phone {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .contacts__item-title {
+    padding-left: 0;
+  }
+
+  .contacts__item-description {
+    padding-left: 0;
+  }
+
+  .contacts__list::after {
+    display: none;
+  }
 }

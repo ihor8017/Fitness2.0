@@ -81,3 +81,21 @@ width: 410px;
     padding-bottom: 5px;
   }
 }
+
+@media (max-width: $mobile-maxwidth) {
+  .form-lesson {
+    width: calc(100vw - 30px);;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .form-lesson__phone {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 5px;
+  }
+
+  .form-lesson__button {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}

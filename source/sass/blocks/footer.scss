@@ -38,3 +38,14 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .footer__logo {
+    font-size: 20px;
+    margin-top: 5px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
