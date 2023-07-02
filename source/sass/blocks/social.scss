@@ -1,0 +1,40 @@
+.social {
+  display:flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+
+  :last-child {
+    margin-right: 0;
+  }
+
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $BaseWhite;
+  color: $BaseColor;
+  svg {
+    display: block;
+
+  }
+}
+
+.social_link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 10px
+
+}

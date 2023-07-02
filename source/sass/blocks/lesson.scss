@@ -1,0 +1,17 @@
+.lesson {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 410px;
+  padding: 56px 170px 56px 103px;
+  color: $BaseWhite;
+  background: $BaseColor;
+}
+.lesson__title {
+  margin: 0;
+  margin-bottom: 14px;
+  @extend %title-logofont;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 156%;
+  letter-spacing: 2.32px;
+}

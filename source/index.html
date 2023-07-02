@@ -267,88 +267,92 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="lesson">
-        <p class="lesson__title">Бесплатное занятие </p>
-        <form class="form-lesson">
-          <label class="form-lesson__name">Имя
-            <input type="text" name="name" value="Имя">
-          </label>
-          <label class="form-lesson__phone">Телефон
-            <input type="tel" name="phone"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}--[0-9]{2}" placeholder="8-800-555-55-55" value="8-800-555-55-55">
-          </label>
-          <button class="form-lesson__button button" type="submit"></button>
-        </form>
+      <div class="footer__wrapper">
+        <div class="lesson">
+          <h2 class="lesson__title">Бесплатное занятие </h2>
+          <form class="form-lesson">
+            <label class="form-lesson__name"><span class="visually-hidden">Имя</span>
+              <input type="text" name="name" value="Имя" placeholder="Имя">
+            </label>
+            <label class="form-lesson__phone"><span class="visually-hidden">Телефон</span>
+              <input type="tel" name="phone"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}--[0-9]{2}" value="8-800-555-55-55" placeholder="Телефон">
+            </label>
+            <button class="form-lesson__button button" type="submit">отправить</button>
+          </form>
+        </div>
+        <div class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__item-title">Адрес:</p>
+              <p class="contacts__item-description">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Телефон:</p>
+              <p class="contacts__item-description">
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">График работы:</p>
+              <p class="contacts__item-description">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Email:</p>
+              <p class="contacts__item-description">
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="contacts">
-        <p class="contacts__title">Контакты</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__item-title">Адрес:</p>
-            <p class="contacts__item-description">г. Омск, ул. 60 лет Октября, 7</p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__item-title">Телефон:</p>
-            <p class="contacts__item-description">
-              <a href="tel:88005555555">8-800-555-55-55</a>
-            </p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__item-title">График работы:</p>
-            <p class="contacts__item-description">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <p class="contacts__item-title">Email:</p>
-            <p class="contacts__item-description">
-              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-navigation">
-        <p class="logo">Supergym</p>
-        <ul class="footer-navigation__list">
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Услуги</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Абонементы</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Акции</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Тренеры</a>
-          </li>
-          <li class="footer-navigation__item">
-            <a class="footer-navigation__link">Расписание</a>
-          </li>
-        </ul>
-        <ul class="social-list social">
-          <li class="social__item">
-            <a class="social__Link">
-              <svg width="22" height="22">
-                <use xlink:href="img/icons/stack.svg#vk"></use>
-              </svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__Link">
-              <svg width="22" height="22">
-                <use xlink:href="img/icons/stack.svg#ok"></use>
-              </svg>
-              <span class="visually-hidden">Одноклассники</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__Link">
-              <svg width="22" height="22">
-                <use xlink:href="img/icons/stack.svg#reddit"></use>
-              </svg>
-              <span class="visually-hidden">Reddit</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__botttom-block">
+        <div class="footer-navigation">
+          <a class="footer__logo logo" href="home.html">Supergym</a>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link link" href="service.html">Услуги</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link link" href="subscriptions.html">Абонементы</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link link" href="instock.html">Акции</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link link" href="trainers.html">Тренеры</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link link" href="schedule.html">Расписание</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__Link" href="vk.com">
+                <svg width="12" height="12">
+                  <use xlink:href="img/icons/stack.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__Link" href="ok.com">
+                <svg width="15" height="15">
+                  <use xlink:href="img/icons/stack.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__Link" href="reddit.com">
+                <svg width="15" height="15">
+                  <use xlink:href="img/icons/stack.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="./js/script.js" defer></script>
