@@ -16,6 +16,9 @@
   list-style: none;
   color: $BaseWhite;
 }
+.footer-navigation__item--hidden {
+  display: none;
+}
 
 .footer-navigation__item {
   box-sizing: border-box;
@@ -62,9 +65,9 @@
   }
 }
 
-@media (max-width: $tablet-maxwidth) {
+@media (max-width: $mobile-maxwidth) {
   .footer-navigation {
-    padding: 40px 15px;
+    padding: 40px 5px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,6 +80,13 @@
     grid-row-end: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   // grid-row-start: 2;
+    row-gap: 8px;
+    column-gap: 10px;
+    margin-bottom: 26px;
+  }
+
+  .footer-navigation__item--hidden {
+    display: block;
+    opacity: 0;
   }
 }
