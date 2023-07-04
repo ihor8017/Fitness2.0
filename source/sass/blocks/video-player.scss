@@ -55,3 +55,32 @@
     content: "";
   }
 }
+
+@media (width: $tablet-width) {
+  .video-player {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-left: 0;
+    margin-bottom: -58px;
+  }
+
+
+  .video-player__container {
+    position: relative;
+    width: 40%;
+    height: auto;
+  }
+
+  .video-player__play {
+    width: 73px;
+    height: 73px;
+
+    span {
+      display: block;
+      width: 52px;
+      height: 52px;
+    }
+  }
+}

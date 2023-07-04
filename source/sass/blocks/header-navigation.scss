@@ -10,6 +10,7 @@
   text-align: right;
   margin: 0;
   margin-top: 121px;
+  margin-right: 6px;
   padding: 0;
 }
 
@@ -46,10 +47,15 @@
 
   .header-navigation__list {
     margin-top: 91px;
+    margin-right: -4px;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
+  .header-navigation {
+    margin-right: 36px;
+  }
+
   .header-navigation__list {
     margin-top: 77px;
   }

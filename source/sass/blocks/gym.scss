@@ -63,3 +63,60 @@
 .gym__description--part1 {
   margin-bottom: 7px;
 }
+
+@media (width: $tablet-width) {
+  .gym {
+    padding: 90px 45px;
+    min-width: $tablet-width;
+    width: 100%;
+    row-gap: 26px;
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+
+    picture {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+  }
+
+  .gym__text-wrapper {
+    padding: 6px 88px 10px;
+  }
+
+  .gym__title {
+    font-size: 42px;
+    margin-top: 0;
+    padding-right: 10px;
+    margin-bottom: 4px;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+
+  .gym__info {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .gym__description {
+    text-align: center;
+  }
+
+  .gym__description--part2 {
+    display: none;
+  }
+
+  .gym__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .gym__video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
