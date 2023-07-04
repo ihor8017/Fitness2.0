@@ -73,7 +73,7 @@ width: 410px;
 
 @media (max-width: $tablet-maxwidth) {
   .form-lesson {
-    width: calc(100vw - 296px);
+    width: 100%;
     column-gap: 60px;
   }
 
@@ -84,7 +84,7 @@ width: 410px;
 
 @media (max-width: $mobile-maxwidth) {
   .form-lesson {
-    width: calc(100vw - 30px);;
+    width: 100%;
     grid-template-columns: 1fr;
     row-gap: 30px;
   }

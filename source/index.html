@@ -27,9 +27,9 @@
             </li>
            </ul>
           </nav>
-            <p class="header__town">Омск</p>
-            <h1 class="header__title">Фитнес <span>центр</span></h1>
-            <a class="header__button button link" href="subscription.html">Купить абонемент</a>
+          <p class="header__town">Омск</p>
+          <h1 class="header__title">Фитнес <span>центр</span></h1>
+          <a class="header__button button link" href="subscription.html">Купить абонемент</a>
           <picture>
             <source type="img/webp" media="(min-width: 1366px)" srcset="img/header/superman-desktop@1x.webp 1x, img/header/superman-desktop@2x.webp 2x">
             <source media="(min-width: 1366px)" srcset="img/header/superman-desktop@1x.jpg 1x, img/header/superman-desktop@2x.jpg 2x">
@@ -38,17 +38,18 @@
           </picture>
         </div>
       </div>
-
     </header>
     <main class="main">
       <article class="gym">
         <div class="gym__text-wrapper">
           <h2 class="gym__title">Тренажерный зал</h2>
           <p class="gym__info">Просторный зал площадью 900 кв/м</p>
-          <p class="gym__description">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
+          <p class="gym__description gym__description--part1">Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
-            Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </p>
+          <p class="gym__description">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+            Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+          </p>
         </div>
         <picture>
           <source type="img/webp" media="(min-width: 1366px)" srcset="img/gym/gym-desktop@1x.webp 1x, img/gym/gym-desktop@2x.webp 2x">
@@ -58,14 +59,21 @@
           <source type="img/webp" srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
           <img class="gym__image" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
         </picture>
-        <picture>
-          <source type="img/webp" media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.webp 1x, img/gym/videopreview-desktop@2x.webp 2x">
-          <source media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.jpg 1x, img/gym/videopreview-desktop@2x.jpg 2x">
-          <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.webp 1x, img/gym/videopreview-tablet@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.jpg 1x, img/gym/videopreview-tablet@2x.jpg 2x">
-          <source type="img/webp" srcset="img/gym/videopreview-mobile@1x.webp 1x, img/gym/videopreview-mobile@2x.webp 2x">
-          <img class="gym__image" src="img/gym/videopreview-mobile@1x.jpg" srcset="img/gym//videopreview-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
-        </picture>
+        <div class="video-player">
+          <div class="video-player__container">
+            <picture>
+              <source type="img/webp" media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.webp 1x, img/gym/videopreview-desktop@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/gym/videopreview-desktop@1x.jpg 1x, img/gym/videopreview-desktop@2x.jpg 2x">
+              <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.webp 1x, img/gym/videopreview-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.jpg 1x, img/gym/videopreview-tablet@2x.jpg 2x">
+              <source type="img/webp" srcset="img/gym/videopreview-mobile@1x.webp 1x, img/gym/videopreview-mobile@2x.webp 2x">
+              <img class="gym__video" src="img/gym/videopreview-mobile@1x.jpg" srcset="img/gym//videopreview-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
+            </picture>
+            <div class="video-player__control">
+              <button class="video-player__play"><span class="ideo-player__control-play"></button>
+            </div>
+          </div>
+        </div>
       </article>
       <section class="subscription">
         <h2 class="subscription__title">Абонементы</h2>

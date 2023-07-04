@@ -21,8 +21,5 @@ $mobile-maxwidth: 767.5px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
-}
-
-@mixin fontSizeCalc($min, $max, $width) {
-  font-size: calc($min + ($max - $min) * (100vw / $width));
+  color: #102654;
 }

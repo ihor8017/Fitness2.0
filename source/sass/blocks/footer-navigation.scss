@@ -60,7 +60,6 @@
   }
 
   .footer-navigation__item {
-    box-sizing: border-box;
     margin-right: 10px;
   }
 }
@@ -68,6 +67,7 @@
 @media (max-width: $mobile-maxwidth) {
   .footer-navigation {
     padding: 40px 5px;
+    box-sizing: border-box;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,6 +79,8 @@
     grid-row-start: 1;
     grid-row-end: 3;
     display: grid;
+    width: 100%;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
     row-gap: 8px;
     column-gap: 10px;
@@ -87,6 +89,6 @@
 
   .footer-navigation__item--hidden {
     display: block;
-    opacity: 0;
+    visibility: hidden;
   }
 }

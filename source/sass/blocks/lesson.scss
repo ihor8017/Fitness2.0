@@ -35,7 +35,8 @@
 @media (max-width: $mobile-maxwidth) {
   .lesson {
     padding:  57px 15px 70px;
-    width: 100vw;
+    min-width: $mobile-width;
+    width: 100%;
   }
 
   .lesson__title {
