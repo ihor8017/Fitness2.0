@@ -56,7 +56,7 @@
   }
 }
 
-@media (width: $tablet-width) {
+@media (max-width: $tablet-maxwidth) {
   .video-player {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -77,10 +77,32 @@
     width: 73px;
     height: 73px;
 
+    ::after{
+      width: 12px;
+      height: 12px;
+      background-size: 12px 12px;
+
+    }
+
     span {
       display: block;
       width: 52px;
       height: 52px;
     }
+  }
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .video-player {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .video-player__container {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }
