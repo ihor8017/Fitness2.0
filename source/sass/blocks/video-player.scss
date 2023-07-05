@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   background: transparent;
-  border: 2px solid linear-gradient(to left, #003D85, #B80027)  border-box;
+  border: 2px solid $SecondaryMain;
   border-radius: 50%;
 
   span {
@@ -40,7 +40,7 @@
     height: 70px;
     margin: auto;
     border-radius: 50%;
-    background-image: linear-gradient(to left, #B80027, #003D85);
+    background-image: linear-gradient(to left, $SecondaryMain, #003D85);
   }
 
   ::after {
@@ -55,6 +55,37 @@
     content: "";
   }
 }
+
+  .video-player__play:hover,
+  .video-player__play:focus {
+    border-color: $BaseColor;
+    outline: none;
+
+    span {
+      background: $BaseWhite;
+    }
+
+    ::after {
+      background: $BaseColor;
+    }
+  }
+
+  .video-player__play:active  span {
+    width: 40px;
+    height: 40px;
+  }
+
+  .video-player__play:disabled {
+    border-color: $BaseColor;
+    opacity: 0.5;
+    span {
+      background: $BaseWhite;
+    }
+
+    ::after {
+      background: $BaseColor;
+    }
+  }
 
 @media (max-width: $tablet-maxwidth) {
   .video-player {
