@@ -1,0 +1,78 @@
+.card {
+  box-sizing: border-box;
+  display: inline;
+  width: 360px;
+  padding: 66px 60px;
+  padding-bottom: 91px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: $BaseWhite;
+}
+
+.card:hover {
+  padding: 62px 56px;
+border: 6px solid $SecondaryMain;
+
+.card__button {
+  border: none;
+  color: $BaseWhite;
+  background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
+}
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 9px;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 26px;
+  text-align: center;
+  color: $BaseColor;
+}
+
+.card__schedule {
+  margin: 0;
+  margin-bottom: 67px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #495A7D;
+}
+
+.card__price {
+  position: relative;
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  color: $BaseSecondary;
+  z-index: 1;
+
+  span {
+    position: relative;
+  }
+
+  span:first-child {
+    position: absolute;
+    left: 19px;
+    top: -21px;
+    font-size: 100px;
+    color: rgba($SecondaryLight, 1);
+    z-index: 0;
+  }
+
+  span:last-child {
+    padding-left: 14px;
+    font-weight: 400;
+    color: $BaseColor;
+  }
+}
+.card__button {
+  display: inline;
+  border-width: 2px;
+  padding: 24px 44px;
+  color: $BaseColor;
+  border-color: $BaseColor;
+}
