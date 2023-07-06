@@ -76,3 +76,13 @@ border: 6px solid $SecondaryMain;
   color: $BaseColor;
   border-color: $BaseColor;
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .card {
+    width: 442px;
+  }
+
+  .card__price span:first-child {
+    left: 58px;
+  }
+}
