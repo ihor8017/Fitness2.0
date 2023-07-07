@@ -2,15 +2,15 @@
   box-sizing: border-box;
   display: inline;
   width: 360px;
-  padding: 66px 60px;
-  padding-bottom: 91px;
+  padding: 57px 56px;
+  padding-bottom: 87px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background: $BaseWhite;
+  border: 6px solid rgba($SecondaryMain, 0);
 }
 
 .card:hover {
-  padding: 62px 56px;
-border: 6px solid $SecondaryMain;
+  border: 6px solid $SecondaryMain;
 
 .card__button {
   border: none;
@@ -85,4 +85,45 @@ border: 6px solid $SecondaryMain;
   .card__price span:first-child {
     left: 58px;
   }
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .card {
+    width: 100%;
+    padding: 66px 35px;
+    padding-top: 45px;
+    padding-bottom: 48px;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__schedule {
+    margin-bottom: 54px;
+  }
+
+  .card__price {
+    display: inline-block;
+    margin-bottom: 29px;
+    font-size: 48px;
+
+    span:first-child {
+      top: -25%;
+      left: -10%;
+      font-size: 80px;
+    }
+
+    span:last-child {
+      padding-left: 8px;
+    }
+  }
+
+  .card__button {
+    width: 100%;
+    display: block;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
 }
