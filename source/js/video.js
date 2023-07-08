@@ -8,6 +8,7 @@ const playVideo = function () {
   playButton.addEventListener('click', (evt) =>{
     evt.preventDefault;
     video.style.display = "block";
+    video.src = "https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=1";
     videoPlayer.querySelector(".video-player__control").style.display = "none";
     previewer.style.display = "none";
   });
