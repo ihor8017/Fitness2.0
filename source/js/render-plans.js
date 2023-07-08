@@ -8,6 +8,7 @@ const planFragment = document.createDocumentFragment();
 const renderCards = (plan) => {
   console.log("start render");
   const activeButton = subscription.querySelector(".subscription__button--active");
+
   plan.forEach(({ id, name, schedule, price, src }) => {
     const planCard = newPlan.cloneNode(true);
     planCard.querySelector(".card__title").textContent = name;
@@ -21,6 +22,7 @@ const renderCards = (plan) => {
   subsPlan.innerHTML = "";
   subsPlan.appendChild(planFragment);
 }
+
 const renderPlan = () => {
   subscription.addEventListener('click', (evt) => {
     const subsPlan = evt.target.closest('[data-id]');
