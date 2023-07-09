@@ -48,6 +48,12 @@ export function processStyles () {
     .pipe(browser.stream());
 }
 
+export function styles () {
+  return gulp.src('source/vendor/*.css', { sourcemaps: isDevelopment })
+  .pipe(gulp.dest('build/css', { sourcemaps: isDevelopment }))
+  .pipe(browser.stream());
+}
+
 export function processScripts () {
   return gulp.src('source/js/**/*.js')
     .pipe(terser())
@@ -120,6 +126,7 @@ function compileProject (done) {
   gulp.parallel(
     processMarkup,
     processStyles,
+    styles,
     processScripts,
     optimizeVector,
     createStack,

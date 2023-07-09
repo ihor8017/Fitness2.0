@@ -137,6 +137,7 @@
 @media (max-width: $tablet-maxwidth) {
   .events {
     padding: 99px 0;
+    padding-bottom: 49px;
     width: 100%;
   }
 
@@ -209,6 +210,7 @@
 @media (max-width: $mobile-maxwidth) {
   .events {
     padding: 71px 15px;
+    padding-bottom: 50px;
     width: 100%;
     flex-direction: column;
   }
