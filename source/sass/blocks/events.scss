@@ -205,3 +205,20 @@
     border-width: 2px;
   }
 }
+
+@media (max-width: $mobile-maxwidth) {
+  .events {
+    padding: 71px 15px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .events__text-block {
+    padding-top: 51px;
+    padding-bottom: 52px;
+    display: grid;
+    grid-template-columns:44px 2fr 29px 1fr 44px;
+    width: 100%;
+  }
+
+}
