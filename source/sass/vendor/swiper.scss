@@ -8,43 +8,76 @@
   padding-left: 20px;
 }
 
-.swiper .swiper-button-next::after,
-.swiper .swiper-button-prev::after {
+.swiper__button-prev,
+.swiper__button-next {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   position: absolute;
   box-sizing: border-box;
-  left: -21%;
-  height: 32px;
-  padding: 4px;
-  width: 16px;
-  font-size: 32px;
-  color: $BaseGrey;
-  z-index: 20;
+  top: 41%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba($BaseColor , $alpha: 0);
+  border-radius: 50%;
+  content: "";
+  z-index: 210;
 }
 
-.swiper .swiper-button-next::after {
-  left: 80%;
+.swiper__button-prev:hover,
+.swiper__button-next:hover,
+.swiper__button-prev:focus,
+.swiper__button-next:focus, {
+  border: 1px solid $BaseColor;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper__button-prev:active,
+.swiper__button-next:active {
+  border-color: $BaseColor;
+  background: $BaseColor;
+}
+
+.swiper__button-next {
+  left: 95%;
+}
+
+.swiper__button-prev::after,
+.swiper__button-next::after {
   position: absolute;
-  width: 100px;
-  height: 32px;
-  padding: 8px 16px;
-  color: $BaseGrey;
+  top: 10px;
+  left: 17px;
+  width: 16px;
+  height: 30px;
+  background: $BaseGrey;
+  z-index: 11;
+  content: "";
+}
+
+.swiper__button-prev::after {
+  mask-image: url("../../img/trainer/arrow-prev.svg");
+}
+
+.swiper__button-next::after {
+  mask-image: url("../../img/trainer/arrow-next.svg");
+}
+
+.swiper__button-prev:active.swiper__button-prev::after,
+.swiper__button-next:active.swiper__button-next::after {
+  background: $BaseWhite;
 }
 
 @media (max-width: $tablet-maxwidth) {
   .swiper {
-    width: 600px;
+    width: 90%;
   }
 
-  .swiper .swiper-button-prev::after {
-    left: -24%;
+  .trainers .swiper {
+    padding-right: 20px;
+    padding-left: 17px;
   }
 
-  .swiper .swiper-button-next::after {
-    left: 80%;
+
+.swiper__button-next {
+    left: 90.8%;
   }
 
 }
@@ -59,13 +92,24 @@
     padding-left: 0;
   }
 
-
-  .swiper .swiper-button-prev::after {
-    left: -24%;
+  .swiper__button-prev,
+  .swiper__button-next {
+   width: 30px;
+   height: 30px;
   }
 
-  .swiper .swiper-button-next::after {
-    left: 80%;
+
+
+.swiper__button-prev::after,
+.swiper__button-next::after {
+    width: 10px;
+    height: 20px;
+    top: 5px;
+    left: 8.5px;
+  }
+
+.swiper__button-next {
+    left: 67%;
   }
 
 }

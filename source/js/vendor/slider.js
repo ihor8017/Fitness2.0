@@ -3,8 +3,8 @@ import Swiper from './swiper-bundle.js';
 const swiper = new Swiper('.swiper', {
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper__button-next',
+    prevEl: '.swiper__button-prev',
   },
   // Responsive breakpoints
   breakpoints: {

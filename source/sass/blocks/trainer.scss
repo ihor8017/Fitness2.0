@@ -11,7 +11,9 @@
 .trainer__info {
   display: none;
   top: 0;
+  box-sizing: border-box;
   height: 100%;
+  width: 260px;
   padding: 76px 10px 10px;
   text-align: center;
   background: rgba(16, 38, 84, 0.89);
@@ -59,7 +61,49 @@
   margin-bottom: 13px;
 }
 
+.trainer__image {
+  width: 260px;
+  object-fit: contain;
+}
+@media (max-width: $tablet-maxwidth) {
+  .trainer__info {
+    width: 268px;
+  }
+
+  .trainer__image {
+    width: 268px;
+  }
+
+  .trainer__name {
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: $mobile-maxwidth) {
+  .trainer {
+    width: 224px;
+  }
+
+  .trainer__info {
+    width: 224px;
+    padding-top: 67px;
+  }
+
+  .trainer:hover .trainer__name,
+  .trainer:focus .trainer__name {
+    top: 45px;
+  }
+
+  .trainer__discipline {
+    margin-bottom: 32px;
+  }
+  .trainer__skills-list {
+    padding-left: 44px;
+  }
+
   .trainer__image {
     width: 226px;
     height: 274px;
