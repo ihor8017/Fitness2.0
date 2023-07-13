@@ -9,30 +9,78 @@
 
 
 .promo__title {
-  font-size: 28px;
+  margin: 0;
+  margin-bottom: 1px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 156%;
 }
 
 .promo__description {
+  margin: 0;
+  margin-bottom: 66px;
   font-size: 16px;
 }
 
 .promo__link {
+  font-size: 12px;
+  font-weight: 700;
   color: $BaseColor;
   text-transform: uppercase;
   border-bottom: 1px solid #1C3374;
+  letter-spacing: 0.6px;
 }
+
+.promo__item {
+  padding: 18px 28px 20px;
+  box-sizing: border-box;
+  border: 7px solid;
+  border-image-slice: 5;
+  border-image-source: linear-gradient(to right, #d10a42, #00359f);
+}
+
 
 .promo__item--main {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  color: $BaseWhite;
 }
 
 .promo__item-wrapper {
+  padding: 34px 45px 30px;
+  background: $BannerColor;
 
+  .promo__title {
+    font-size: 28px;
+  }
+
+  span:first-child {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  span:last-child {
+    display: block;
+    margin-bottom: 36px;
+    font-size: 70px;
+  }
+  .promo__description {
+    margin-bottom: 187px;
+    font-size: 18px;
+  }
+
+  .promo__link {
+    color: $BaseWhite;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    border-bottom:  1px solid $BaseWhite;
+  }
 }
 
 .promo__item--month {
@@ -43,4 +91,8 @@
 .promo__item--sale {
   grid-column:  2 /3;
   grid-row: 2 / 3;
+}
+
+.promo__image {
+  display: block;
 }
