@@ -21,3 +21,37 @@
   box-sizing: border-box;
   list-style: none;
 }
+
+
+@media (max-width: $tablet-maxwidth) {
+  .instock {
+    padding: 92px 45px 120px;
+  }
+
+  .instock__title {
+    margin-bottom: 41px;
+    font-size: 42px;
+  }
+
+  .instock__list {
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .instock {
+    padding: 63px 15px 120px;
+    flex-direction: column;
+  }
+
+  .instock__title {
+    font-size: 32px;
+  }
+
+  .instock__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+  }
+}
