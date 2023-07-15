@@ -348,38 +348,151 @@
           </li>
           <li class="promo__item promo__item--sale">
             <p class="promo__title">Скидка 20%</p>
-            <p class="promo__description">Корпоративный фитнес  с командой</p>
+            <p class="promo__description">Корпоративный фитнес  с&nbsp; командой</p>
             <a class="promo__link link" href="#instock.html">подробнее</a>
           </li>
         </ul>
       </section>
       <section class="faq">
-        <h2 class="faq__title">Вопросы и ответы</h2>
-        <ul class="faq-navigation">
-          <li class="faq-navigation__item">
-            <a class="faq-navigation__button button" href="#">Центр</a>
-            <a class="faq-navigation__button button" href="#">Абонемент</a>
-            <a class="faq-navigation__button button" href="#">Услуги</a>
-            <a class="faq-navigation__button button" href="#">Правила</a>
-          </li>
-        </ul>
-        <ul class="faq-content">
-          <li class="faq-content__item">
-            <p class="faq-content__question">Занятия с тренером входят в абонемент?</p>
-            <p class="faq-content__response">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
-              В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
-              по&nbsp;тренажеру или технике выполнения упражнения.</p>
-          </li>
-          <li class="faq-content__item">
-            <p class="faq-content__question">Можно ли заморозить абонемент?</p>
-          </li>
-          <li class="faq-content__item">
-            <p class="faq-content__question">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
-          </li>
-          <li class="faq-content__item">
-            <p class="faq-content__question">Что такое семейный доступ и доступ для друзей?</p>
-          </li>
-        </ul>
+        <div class="faq__wrapper" data-tabs="parent">
+          <h2 class="faq__title">Вопросы и ответы</h2>
+          <ul class="faq-navigation" data-tabs="controls">
+            <li class="faq-navigation__item">
+              <button class="faq-navigation__button button" href="#" data-tabs="control">Центр</button>
+            </li>
+            <li class="faq-navigation__item">
+              <button class="faq-navigation__button button" href="#" data-tabs="control">Абонемент</button>
+            </li>
+            <li class="faq-navigation__item">
+              <button class="faq-navigation__button button" href="#" data-tabs="control">Услуги</button>
+            </li>
+            <li class="faq-navigation__item">
+              <button class="faq-navigation__button button" href="#" data-tabs="control">Правила</button>
+            </li>
+          </ul>
+          <div data-tabs="content">
+            <ul class="faq-content for-load" data-tabs="element" data-accordion="parent">
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Занятия с тренером входят в абонемент?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                  <button class="faq-content__button faq-content__button--open" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Можно ли заморозить абонемент?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Что такое семейный доступ и доступ для друзей?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+            </ul>
+            <ul class="faq-content" data-tabs="element" data-accordion="parent">
+              <li class="faq-content__item faq-content__item--active" data-accordion="element">
+                <p class="faq-content__question">Есть ли фитнес программы в вашем центре?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                  <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Можно ли заниматься боевыми искусствами?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли на территории салон красоты?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли бар спортивного питания на территории центра?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+            </ul>
+            <ul class="faq-content" data-tabs="element" data-accordion="parent">
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли фитнес программы в вашем центре?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                  <button class="faq-content__button faq-content__button--open" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Можно ли заниматься боевыми искусствами?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли на территории салон красоты?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли бар спортивного питания на территории центра?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+            </ul>
+            <ul class="faq-content" data-tabs="element" data-accordion="parent">
+              <li class="faq-content__item faq-content__item--active" data-accordion="element">
+                <p class="faq-content__question">Есть ли фитнес программы в вашем центре?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                  <button class="faq-content__button faq-content__button--open" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Можно ли заниматься боевыми искусствами?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли на территории салон красоты?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+              <li class="faq-content__item" data-accordion="element">
+                <p class="faq-content__question">Есть ли бар спортивного питания на территории центра?</p>
+                <p class="faq-content__response" data-accordion="content">При посещении тренажерного зала вам необходимо оплачить занятия с&nbsp;тренером отдельно.
+                  В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию
+                  по&nbsp;тренажеру или технике выполнения упражнения.</p>
+                <button class="faq-content__button" type="button" data-accordion="button"><span class="visually-hidden">Открыть</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section class="reviews">
         <ul class="reviews-slider">

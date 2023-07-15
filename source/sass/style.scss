@@ -24,9 +24,18 @@
 @import "blocks/card";
 @import "blocks/events";
 @import "blocks/trainers";
-@import "vendor/swiper";
 @import "blocks/trainer";
 @import "blocks/advantages";
 @import "blocks/advantage-card";
 @import "blocks/instock";
 @import "blocks/promo";
+@import "blocks/faq";
+@import "blocks/faq-navigation";
+@import "blocks/faq-content";
+
+/* VENDOR */
+@import "vendor/swiper";
+@import "vendor/tabs";
+@import "vendor/data-tabs";
+@import "vendor/data-accordion";
+@import "vendor/accordion";

@@ -1,0 +1,35 @@
+.faq-navigation {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.faq-navigation__item {
+  margin-bottom: 11.5px;
+  list-style: none;
+}
+
+.faq-navigation__button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  padding-top: 18px;
+  color: $BaseColor;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+}
+
+.faq-navigation__button:hover,
+.faq-navigation__button:focus,
+.faq-navigation__button.is-active {
+  color: $BaseWhite;
+  background: linear-gradient(151deg, $BannerColor 0%, $SecondaryColor 100%);
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 16.1px;
+}
