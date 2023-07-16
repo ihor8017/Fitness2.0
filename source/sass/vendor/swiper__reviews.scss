@@ -6,3 +6,16 @@
   width: 752px;
   overflow: hidden;
 }
+
+@media (max-width: $tablet-maxwidth) {
+  .swiper__reviews {
+    width: 758px;
+  }
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .swiper__reviews {
+    width: 310px;
+    height: 335px;
+  }
+}
