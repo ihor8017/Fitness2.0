@@ -1,0 +1,70 @@
+.reviews {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 37px;
+  @extend %title-logofont;
+  font-size: 54px;
+  text-align: center;
+}
+
+.reviews__button-prev,
+.reviews__button-next {
+  position: absolute;
+  box-sizing: border-box;
+  top: 93px;
+  left: 18px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  content: "";
+  z-index: 10;
+}
+
+.reviews__button-next {
+  left: 672px;
+}
+
+
+
+.reviews__button-prev::after,
+.reviews__button-next::after {
+  position: absolute;
+  top: 12px;
+  left: 19px;
+  width: 16px;
+  height: 30px;
+  background: $BaseGrey;
+  z-index: 12;
+  content: "";
+}
+
+.reviews__button-prev::after {
+  mask-image: url("../../img/trainer/arrow-prev.svg");
+}
+
+.reviews__button-next::after {
+  mask-image: url("../../img/trainer/arrow-next.svg");
+}
+
+.reviews__button-prev:hover,
+.reviews__button-next:hover,
+.reviews__button-prev:focus,
+.reviews__button-next:focus, {
+  border: 1px solid $BaseColor;
+}
+
+.reviews__button-prev:active,
+.reviews__button-next:active {
+  border-color: $BaseColor;
+  background: $BaseColor;
+}
+
+.reviews__button-prev:active.reviews__button-prev::after,
+.reviews__button-next:active.reviews__button-next::after {
+  background: $BaseWhite;
+}

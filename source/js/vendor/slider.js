@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 0
     },
     768: {
       slidesPerView: 2,
@@ -23,4 +23,26 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-export default swiper;
+const swiperReviews = new Swiper('.swiper__reviews', {
+  loop: true,
+  navigation: {
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    }
+  }
+})
+
+export default {swiper, swiperReviews} ;

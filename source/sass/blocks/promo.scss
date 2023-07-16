@@ -32,7 +32,7 @@
 }
 
 .promo__item {
-  padding: 18px 28px 20px;
+  padding: 14px 28px 27px;
   box-sizing: border-box;
   border: 7px solid;
   border-image-slice: 5;
@@ -52,13 +52,14 @@
   color: $BaseWhite;
 
   picture {
-    display: inline-block;
+    display: block;
   }
 }
 
 .promo__item-wrapper {
-  padding: 34px 45px 30px;
+  padding: 34px 45px 43px;
   background: $BannerColor;
+  height: min-content;
 
   .promo__title {
     font-size: 28px;
@@ -71,7 +72,7 @@
 
   span:last-child {
     display: block;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
     font-size: 70px;
   }
   .promo__description {
@@ -95,6 +96,7 @@
 .promo__item--sale {
   grid-column:  2 /3;
   grid-row: 2 / 3;
+  height: min-content;
 }
 
 .promo__image {
@@ -114,6 +116,7 @@
   }
 
   .promo__item--month {
+    padding-top: 17px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 
@@ -123,6 +126,7 @@
   }
 
   .promo__item--sale {
+    padding-top: 17px;
     grid-column:  2 /3;
     grid-row: 2 / 3;
   }
@@ -131,6 +135,7 @@
     text-align: left;
     width: calc(100% - 399px);
     margin-bottom: 6px;
+    padding-bottom: 45.5px;
 
     span:last-child {
       margin-bottom: 33px;

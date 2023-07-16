@@ -32,6 +32,8 @@
 @import "blocks/faq";
 @import "blocks/faq-navigation";
 @import "blocks/faq-content";
+@import "blocks/reviews";
+@import "blocks/review-card";
 
 /* VENDOR */
 @import "vendor/swiper";
@@ -39,3 +41,4 @@
 @import "vendor/data-tabs";
 @import "vendor/data-accordion";
 @import "vendor/accordion";
+@import "vendor/swiper__reviews";
