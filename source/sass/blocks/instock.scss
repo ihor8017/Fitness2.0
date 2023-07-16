@@ -22,10 +22,9 @@
   list-style: none;
 }
 
-
 @media (max-width: $tablet-maxwidth) {
   .instock {
-    padding: 92px 45px 120px;
+    padding: 92px 45px 100px;
   }
 
   .instock__title {
@@ -35,13 +34,14 @@
 
   .instock__list {
     gap: 30px;
+    row-gap: 24px;
     width: 100%;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .instock {
-    padding: 61px 15px 120px;
+    padding: 61px 15px 68px;
     flex-direction: column;
   }
 
@@ -52,6 +52,6 @@
   .instock__list {
     display: flex;
     flex-direction: column;
-    gap: 30px
+    row-gap: 24px;
   }
 }
