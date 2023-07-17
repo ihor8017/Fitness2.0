@@ -7,7 +7,7 @@ const  scrollPage = () => {
     const target = document.querySelector(id);
     target.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "end"
   });
   });
 };

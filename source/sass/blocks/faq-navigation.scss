@@ -31,7 +31,7 @@
   background: linear-gradient(151deg, $BannerColor 0%, $SecondaryColor 100%);
   border: none;
   padding-top: 19px;
-  padding-bottom: 16.1px;
+  padding-bottom: 16.7px;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -73,8 +73,8 @@
   .faq-navigation__button:hover,
   .faq-navigation__button:focus,
   .faq-navigation__button.is-active {
-    padding-top: 13px;
-    padding-bottom: 14.2px;
+    padding-top: 14px;
+    padding-bottom: 15.2px;
   }
 
   .faq-navigation__button.is-active {
