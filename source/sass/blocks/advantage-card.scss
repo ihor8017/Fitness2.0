@@ -1,15 +1,15 @@
 .advantage-card {
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 37px;
 }
 
 .advantage-card__info {
   span:first-child {
     font-size: 71px;
     font-weight: 700;
-    background-image: linear-gradient(#D10A42, #0041CA);
+    background-image: linear-gradient(#d10a42, #0041ca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -69,8 +69,8 @@ gap: 37px;
 }
 
 @media (max-width: $tablet-maxwidth) {
-  .advantage-card__info span:first-child{
-      font-size: 58px;
+  .advantage-card__info span:first-child {
+    font-size: 58px;
   }
 
   .advantage-card__title {

@@ -1,10 +1,10 @@
 .form-lesson {
-display: grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 30px;
-row-gap: 26px;
-box-sizing: border-box;
-width: 410px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 26px;
+  box-sizing: border-box;
+  width: 410px;
 
   input {
     width: 100%;
@@ -41,7 +41,6 @@ width: 410px;
 }
 
 .form-lesson__name:active {
-
   ::placeholder {
     color: rgba($BaseWhite, 0);
   }
@@ -58,7 +57,6 @@ width: 410px;
 }
 
 .form-lesson__phone:focus {
-
   ::placeholder {
     color: rgba($BaseWhite, $alpha: 0);
   }
@@ -88,6 +86,7 @@ width: 410px;
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
+
   .form-lesson__phone {
     grid-column-start: 1;
     grid-column-end: 2;

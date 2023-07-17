@@ -14,4 +14,4 @@ const playVideo = function () {
   });
 };
 
- export default playVideo;
+export default playVideo;

@@ -9,10 +9,10 @@
 }
 
 .advantages__title {
+  @extend %title-logofont;
   margin: 0;
   margin-bottom: 72px;
   font-size: 54px;
-  @extend %title-logofont;
   text-align: center;
   letter-spacing: 1.62px;
 }
@@ -38,15 +38,14 @@
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   padding-bottom: 63px;
-  border-bottom: 2px solid rgba(209, 10, 66, 0.20);
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages__item--parking {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   padding-bottom: 63px;
-  border-bottom: 2px solid rgba(209, 10, 66, 0.20);
-
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
 .advantages__item--comfort {
@@ -97,9 +96,9 @@
     border-bottom: none;
   }
 
-    .advantages__item {
-      margin-bottom: 25px;
-    }
+  .advantages__item {
+    margin-bottom: 25px;
+  }
 
   .advantages__item--parking {
     grid-column: 3 / 5;
@@ -122,7 +121,6 @@
     grid-column: 2 / 4;
     grid-row: 2 / 3;
   }
-
 }
 
 @media (max-width: $mobile-maxwidth) {

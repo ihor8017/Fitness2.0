@@ -7,19 +7,30 @@
   color: $BaseColor;
 }
 
-
 .promo__title {
   margin: 0;
   margin-bottom: 1px;
   font-size: 26px;
   font-weight: 700;
   line-height: 156%;
+
+  span:first-child {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  span:last-child {
+    display: block;
+    margin-bottom: 33px;
+    font-size: 70px;
+  }
 }
 
 .promo__description {
   margin: 0;
   margin-bottom: 66px;
   font-size: 16px;
+
   span {
     display: block;
   }
@@ -30,7 +41,7 @@
   font-weight: 700;
   color: $BaseColor;
   text-transform: uppercase;
-  border-bottom: 1px solid #1C3374;
+  border-bottom: 1px solid #1c3374;
   letter-spacing: 0.6px;
 }
 
@@ -41,7 +52,6 @@
   border-image-slice: 5;
   border-image-source: linear-gradient(to right, #d10a42, #00359f);
 }
-
 
 .promo__item--main {
   grid-column: 1 / 2;
@@ -69,27 +79,11 @@
     font-size: 18px;
   }
 
-
   .promo__link {
     color: $BaseWhite;
     font-size: 14px;
     letter-spacing: 0.7px;
-    border-bottom:  1px solid $BaseWhite;
-  }
-}
-
-.promo__title {
-  font-size: 28px;
-
-  span:first-child {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  span:last-child {
-    display: block;
-    margin-bottom: 33px;
-    font-size: 70px;
+    border-bottom: 1px solid $BaseWhite;
   }
 }
 
@@ -103,7 +97,7 @@
 }
 
 .promo__item--sale {
-  grid-column:  2 /3;
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
   height: min-content;
 }
@@ -111,7 +105,6 @@
 .promo__image {
   display: inline-block;
 }
-
 
 @media (max-width: $tablet-maxwidth) {
   .promo__item {
@@ -140,7 +133,7 @@
 
   .promo__item--sale {
     padding-top: 17px;
-    grid-column:  2 /3;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 
@@ -173,6 +166,14 @@
 
   .promo__title {
     margin-bottom: 5px;
+
+    span:last-child {
+      margin-bottom: 32px;
+    }
+
+    .promo__description {
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -191,16 +192,6 @@
 
     .promo__description {
       margin-bottom: 37px;
-    }
-  }
-
-  .promo__title {
-    span:last-child {
-      margin-bottom: 32px;
-    }
-
-    .promo__description {
-      margin-bottom: 30px;
     }
   }
 
@@ -224,6 +215,7 @@
   .promo__item--month .promo__description {
     margin-bottom: 19px;
   }
+
   .promo__image {
     width: 100%;
     aspect-ratio: 1 / 1.03;

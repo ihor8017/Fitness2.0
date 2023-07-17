@@ -11,10 +11,10 @@
 }
 
 .subscription__title {
+  @extend %title-logofont;
   margin: 0;
   padding: 0;
   margin-bottom: 17px;
-  @extend %title-logofont;
   font-size: 54px;
   letter-spacing: 1.62px;
   text-align: center;
@@ -28,7 +28,7 @@
   list-style: none;
   display: inline-flex;
 
-  :after {
+  ::after {
     position: absolute;
     width: 100%;
     top: 40px;
@@ -58,6 +58,7 @@
   color: rgba($BaseColor, 0.5);
   border-bottom: 3px solid rgba($BannerColor, 0);
 }
+
 .subscription__button--active {
   border-bottom: 3px solid $BannerColor;
 }
@@ -100,6 +101,7 @@
     margin-bottom: 19px;
     font-size: 42px;
   }
+
   .subscription__duration-item {
     margin-right: 54px;
   }
@@ -135,8 +137,8 @@
     padding-bottom: 5px;
     margin-bottom: 28px;
 
-    :after {
-    top: 36px;
+    ::after {
+      top: 36px;
     }
   }
 

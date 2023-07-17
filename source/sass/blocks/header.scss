@@ -1,6 +1,6 @@
 .header {
   min-width: $mobile-width;
-  background: conic-gradient(from 151deg at 16.03% 39.06%, $FirstMain 32.23633825778961deg, $SecondaryMain 313.3060026168823deg);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, $FirstMain 32.24deg, $SecondaryMain 313.31deg);
 }
 
 .header__wrapper {
@@ -9,8 +9,7 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width:  $desktop-width;
-  box-sizing: border-box;
+  width: $desktop-width;
   padding-left: 19px;
   padding-right: 17px;
   padding-bottom: 24px;
@@ -41,13 +40,13 @@
 }
 
 .header__town {
+  @extend %title-logofont;
   grid-column-start: 2;
   grid-column-end: 3;
   margin: 0;
   margin-top: 98px;
   margin-bottom: 19px;
   padding-right: 62px;
-  @extend %title-logofont;
   text-align: right;
   font-size: 38px;
   line-height: normal;
@@ -57,12 +56,12 @@
 }
 
 .header__title {
+  @extend %title-logofont;
   grid-column-start: 2;
   grid-column-end: 3;
   padding-right: 5px;
   margin: 0;
   margin-bottom: 48px;
-  @extend %title-logofont;
   font-size: 92px;
   line-height: normal;
   letter-spacing: 4.6px;
@@ -89,7 +88,7 @@
 
 @media (max-width: $tablet-maxwidth) {
   .header {
-    background: conic-gradient(from 155deg at 20.70% 35.74%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+    background: conic-gradient(from 155deg at 20.7% 35.74%, #003d85 32.24deg, #b80027 313.31deg);
   }
 
   .header__wrapper {
@@ -98,7 +97,7 @@
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 78px;
-}
+  }
 
   .header__info {
     padding-top: 33px;
@@ -109,6 +108,7 @@
     width: 100%;
     grid-template-columns: 20.6% 27.1% 1fr;
   }
+
   .header__title-wrapper {
     padding-right: 0;
     padding-top: 55px;
@@ -147,14 +147,13 @@
 
 @media (max-width: $mobile-maxwidth) {
   .header {
-    background: conic-gradient(from 167deg at 35.31% 34.22%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+    background: conic-gradient(from 167deg at 35.31% 34.22%, #003d85 32.24deg, #b80027 313.31deg);
   }
 
   .header__wrapper {
     min-width: $mobile-width;
     box-sizing: border-box;
     width: 100%;
-    min-width: $mobile-width;
     display: grid;
     grid-template-columns: 1fr;
     padding-left: 15px;
@@ -185,8 +184,8 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    padding: 18px 83px;;
-   }
+    padding: 18px 83px;
+  }
 
   .header__town {
     grid-column-start: 1;

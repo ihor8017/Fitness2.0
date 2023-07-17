@@ -3,6 +3,7 @@
   height: 294px;
   box-sizing: border-box;
 }
+
 .trainers .swiper {
   padding-right: 20px;
   padding-left: 20px;
@@ -17,7 +18,7 @@
   left: 0;
   width: 56px;
   height: 56px;
-  border: 1px solid rgba($BaseColor , $alpha: 0);
+  border: 1px solid rgba($BaseColor, $alpha: 0);
   border-radius: 50%;
   content: "";
   z-index: 210;
@@ -70,10 +71,9 @@
     width: 90%;
   }
 
-.swiper__button-next {
+  .swiper__button-next {
     left: 90.8%;
   }
-
 }
 
 @media (max-width: $mobile-maxwidth) {
@@ -84,22 +84,19 @@
 
   .swiper__button-prev,
   .swiper__button-next {
-   width: 30px;
-   height: 30px;
+    width: 30px;
+    height: 30px;
   }
 
-
-
-.swiper__button-prev::after,
-.swiper__button-next::after {
+  .swiper__button-prev::after,
+  .swiper__button-next::after {
     width: 10px;
     height: 20px;
     top: 5px;
     left: 8.5px;
   }
 
-.swiper__button-next {
+  .swiper__button-next {
     left: 67%;
   }
-
 }

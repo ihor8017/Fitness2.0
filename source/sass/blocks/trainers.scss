@@ -7,10 +7,10 @@
 }
 
 .trainers__title {
+  @extend %title-logofont;
   margin: 0;
   margin-bottom: 48px;
   padding-left: 20px;
-  @extend %title-logofont;
   font-size: 54px;
   letter-spacing: 2px;
 }

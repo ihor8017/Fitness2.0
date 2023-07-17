@@ -38,4 +38,3 @@ const renderPlan = () => {
   });
 };
 export {renderPlan};
-
