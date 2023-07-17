@@ -5,7 +5,7 @@
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -30,7 +30,7 @@
           </nav>
           <p class="header__town">Омск</p>
           <h1 class="header__title">Фитнес <span>центр</span></h1>
-          <a class="header__button button link" href="subscription.html">Купить абонемент</a>
+          <a class="header__button button link" href="#plans">Купить абонемент</a>
           <picture>
             <source type="img/webp" media="(min-width: 1200px)" srcset="img/header/superman-desktop@1x.webp 1x, img/header/superman-desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/header/superman-desktop@1x.jpg 1x, img/header/superman-desktop@2x.jpg 2x">
@@ -38,9 +38,9 @@
             <img class="header__image" src="img/header/superman-tablet@1x.jpg" srcset="img/header/superman-tablet@2x.jpg 2x" alt="Мужчина в футболке со значком супермена на груди">
           </picture>
         </div>
+      </div>
     </header>
     <main class="main">
-    </div>
       <article class="gym">
         <div class="gym__text-wrapper">
           <h2 class="gym__title">Тренажерный зал</h2>
@@ -62,7 +62,7 @@
         </picture>
         <div class="video-player">
           <div class="video-player__container">
-            <iframe class="video-player__video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="video-player__video" src="#" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <picture>
               <source type="img/webp" media="(min-width: 1200px)" srcset="img/gym/videopreview-desktop@1x.webp 1x, img/gym/videopreview-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gym/videopreview-desktop@1x.jpg 1x, img/gym/videopreview-desktop@2x.jpg 2x">
@@ -81,7 +81,7 @@
       </article>
       <section class="subscription">
         <div class="subscription__wrapper">
-          <h2 class="subscription__title">Абонементы</h2>
+          <h2 class="subscription__title"  id="plans">Абонементы</h2>
           <ul class="subscription__duration">
             <li class="subscription__duration-item">
               <button class="subscription__button subscription__button--active link" type="button" data-id ="1">1 месяц</button>
@@ -358,16 +358,16 @@
           <h2 class="faq__title">Вопросы и ответы</h2>
           <ul class="faq-navigation" data-tabs="controls">
             <li class="faq-navigation__item">
-              <button class="faq-navigation__button button" href="#" data-tabs="control">Центр</button>
+              <button class="faq-navigation__button button" data-tabs="control">Центр</button>
             </li>
             <li class="faq-navigation__item">
-              <button class="faq-navigation__button button" href="#" data-tabs="control">Абонемент</button>
+              <button class="faq-navigation__button button" data-tabs="control">Абонемент</button>
             </li>
             <li class="faq-navigation__item">
-              <button class="faq-navigation__button button" href="#" data-tabs="control">Услуги</button>
+              <button class="faq-navigation__button button" data-tabs="control">Услуги</button>
             </li>
             <li class="faq-navigation__item">
-              <button class="faq-navigation__button button" href="#" data-tabs="control">Правила</button>
+              <button class="faq-navigation__button button" data-tabs="control">Правила</button>
             </li>
           </ul>
           <div data-tabs="content">
@@ -494,14 +494,13 @@
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="swiper__reviews">
+        <div class="swiper-reviews">
           <!-- Additional required wrapper -->
-
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-card--wrapper">
+                  <div class="review-card__wrapper">
                     <picture>
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
@@ -517,7 +516,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-card--wrapper">
+                  <div class="review-card__wrapper">
                     <picture>
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
@@ -533,7 +532,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="review-card">
-                  <div class="review-card--wrapper">
+                  <div class="review-card__wrapper">
                     <picture>
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
@@ -617,7 +616,7 @@
           </ul>
           <ul class="social">
             <li class="social__item">
-              <a class="social__Link" href="vk.com">
+              <a class="social__Link" href="https://vk.com/">
                 <svg width="12" height="12">
                   <use xlink:href="img/icons/stack.svg#vk"></use>
                 </svg>
@@ -625,7 +624,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__Link" href="ok.com">
+              <a class="social__Link" href="https://ok.ru/">
                 <svg width="15" height="15">
                   <use xlink:href="img/icons/stack.svg#ok"></use>
                 </svg>
@@ -633,7 +632,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__Link" href="reddit.com">
+              <a class="social__Link" href="https://www.reddit.com/">
                 <svg width="15" height="15">
                   <use xlink:href="img/icons/stack.svg#reddit"></use>
                 </svg>
@@ -644,6 +643,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js" defer type="module"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>

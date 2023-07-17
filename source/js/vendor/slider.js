@@ -23,8 +23,8 @@ const swiper = new Swiper('.swiper', {
   }
 })
 
-const swiperReviews = new Swiper('.swiper__reviews', {
-  loop: true,
+const swiperReviews = new Swiper('.swiper-reviews', {
+  loop: false,
   navigation: {
     nextEl: '.reviews__button-next',
     prevEl: '.reviews__button-prev',

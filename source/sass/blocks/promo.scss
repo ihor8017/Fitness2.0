@@ -223,5 +223,9 @@
 
   .promo__item--month .promo__description {
     margin-bottom: 19px;
-}
+  }
+  .promo__image {
+    width: 100%;
+    aspect-ratio: 1 / 1.03;
+  }
 }

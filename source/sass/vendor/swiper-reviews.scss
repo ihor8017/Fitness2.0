@@ -1,4 +1,4 @@
-.swiper__reviews {
+.swiper-reviews {
   position: relative;
   margin: 0 auto;
   box-sizing: border-box;
@@ -8,13 +8,13 @@
 }
 
 @media (max-width: $tablet-maxwidth) {
-  .swiper__reviews {
+  .swiper-reviews {
     width: 758px;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
-  .swiper__reviews {
+  .swiper-reviews {
     width: 310px;
     height: 335px;
   }

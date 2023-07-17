@@ -8,6 +8,12 @@
   color: $BaseWhite;
 }
 
+.trainer picture {
+  width: 260px;
+  height: 294px;
+  object-fit: contain;
+}
+
 .trainer__info {
   display: none;
   top: 0;
@@ -63,8 +69,10 @@
 
 .trainer__image {
   width: 260px;
-  object-fit: contain;
+  height: 294px;
+  object-fit: cover;
 }
+
 @media (max-width: $tablet-maxwidth) {
   .trainer__info {
     width: 268px;
@@ -107,5 +115,6 @@
   .trainer__image {
     width: 226px;
     height: 274px;
+    object-fit: cover;
   }
 }

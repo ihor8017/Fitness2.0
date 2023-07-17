@@ -5,7 +5,7 @@
   padding-right: 96px;
 }
 
-.review-card--wrapper {
+.review-card__wrapper {
   width: 560px;
   padding: 62px;
   box-sizing: border-box;
@@ -48,7 +48,7 @@
     width: 758px;
   }
 
-  .review-card--wrapper {
+  .review-card__wrapper {
     width: 566px;
     padding: 62px 65px;
   }
@@ -66,7 +66,7 @@
     padding-right: 42px;
   }
 
-  .review-card--wrapper {
+  .review-card__wrapper {
     grid-template-columns: 80px 80px;
     column-gap: 16px;
     width: 226px;
