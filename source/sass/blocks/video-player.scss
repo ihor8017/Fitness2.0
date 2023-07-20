@@ -43,44 +43,49 @@
   background: transparent;
   border: 2px solid $SecondaryMain;
   border-radius: 50%;
+}
 
-  span {
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin: auto;
-    border-radius: 50%;
-    background-image: linear-gradient(to left, $SecondaryMain, #003d85);
-  }
+.video-player__play::before {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-image: linear-gradient(to left, $SecondaryMain, #003d85);
+  content: "";
+}
 
-  ::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: $BaseWhite;
-    mask-image: url("../../img/playerdef.svg");
-    content: "";
-  }
+.video-player__play::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: $BaseWhite;
+  mask-image: url("../../img/playerdef.svg");
+  content: "";
 }
 
 .video-player__play:hover,
 .video-player__play:focus {
   border-color: $BaseColor;
   outline: none;
-
-  span {
-    background: $BaseWhite;
-  }
-
-  ::after {
-    background: $BaseColor;
-  }
 }
 
-.video-player__play:active span {
+.video-player__play:hover.video-player__play::before,
+.video-player__play:focus.video-player__play::before {
+  background: $BaseWhite;
+}
+
+.video-player__play:hover.video-player__play::after,
+.video-player__play:focus.video-player__play::after {
+    background: $BaseColor;
+}
+
+.video-player__play:active.video-player__play::before {
   width: 40px;
   height: 40px;
 }
@@ -88,15 +93,16 @@
 .video-player__play:disabled {
   border-color: $BaseColor;
   opacity: 0.5;
-
-  span {
-    background: $BaseWhite;
-  }
-
-  ::after {
-    background: $BaseColor;
-  }
 }
+
+.video-player__play:disabled.video-player__play::before {
+  background: $BaseWhite;
+}
+
+.video-player__play:disabled.video-player__play::after {
+  background: $BaseColor;
+}
+
 
 @media (max-width: $tablet-maxwidth) {
   .video-player {
@@ -124,18 +130,17 @@
   .video-player__play {
     width: 73px;
     height: 73px;
+  }
 
-    ::after {
-      width: 12px;
-      height: 12px;
-      background-size: 12px 12px;
-    }
+  .video-player__play::after {
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+  }
 
-    span {
-      display: block;
-      width: 52px;
-      height: 52px;
-    }
+  .video-player__play::before {
+    width: 52px;
+    height: 52px;
   }
 }
 

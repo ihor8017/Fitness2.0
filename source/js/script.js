@@ -6,6 +6,8 @@ import swiperReviews from "./vendor/slider.js";
 import {initTabs} from "./vendor/init-tabs.js";
 import {initAccordions} from './vendor/init-accordion.js';
 import formValidate from "./validate.js";
+
+
 playVideo();
 showPlan();
 formValidate();

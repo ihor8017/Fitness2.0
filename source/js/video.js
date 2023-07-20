@@ -1,14 +1,12 @@
 
 const playVideo = function () {
   const videoPlayer = document.querySelector(".video-player__container");
-  const video = videoPlayer.querySelector(".video-player__video");
   const  playButton = videoPlayer.querySelector(".video-player__play");
   const previewer = videoPlayer.querySelector("picture");
+  let source = playButton.getAttribute('href');
 
-  playButton.addEventListener('click', (evt) =>{
-    evt.preventDefault;
-    let source = video.getAttribute('href');
-    video.remove();
+  playButton.addEventListener('click', (evt) => {
+    evt.preventDefault();
     videoPlayer.querySelector(".video-player__control").style.display = "none";
     const newIframe = document.createElement('iframe');
     newIframe.classList.add("video-player__video");

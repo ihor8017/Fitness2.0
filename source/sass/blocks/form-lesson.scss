@@ -53,8 +53,7 @@
   border-bottom: 1px solid rgba($ErrorColor, $alpha: 1);
 }
 
-.form-lesson__name--errore,
-.form-lesson__phone--errore {
+.form-lesson__input--errore {
   position: absolute;
   color: $ErrorColor;
 }
