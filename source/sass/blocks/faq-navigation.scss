@@ -8,6 +8,8 @@
 .faq-navigation__item {
   margin-bottom: 11.5px;
   list-style: none;
+  margin-left: 2px;
+  margin-right: 1px;
 }
 
 .faq-navigation__button {
@@ -21,7 +23,8 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 100%;
-  border: 1px solid rgba(16, 38, 84, 0.2);
+  border: none;
+  outline: 1px solid rgba(16, 38, 84, 0.2);
 }
 
 .faq-navigation__button:hover,
@@ -30,8 +33,6 @@
   color: $BaseWhite;
   background: linear-gradient(151deg, $BannerColor 0%, $SecondaryColor 100%);
   border: none;
-  padding-top: 19px;
-  padding-bottom: 16.1px;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -68,17 +69,5 @@
     min-width: 141px;
     width: 44%;
     margin-right: 0;
-  }
-
-  .faq-navigation__button:hover,
-  .faq-navigation__button:focus,
-  .faq-navigation__button.is-active {
-    padding-top: 14px;
-    padding-bottom: 15.2px;
-  }
-
-  .faq-navigation__button.is-active {
-    padding-top: 13px;
-    padding-bottom: 14.2px;
   }
 }

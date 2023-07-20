@@ -1,14 +1,14 @@
 /* в этот файл добавляет скрипты*/
 import playVideo from "./video.js";
-import { renderPlan } from "./render-plans.js";
+import { showPlan } from "./show-plans.js";
 import swiper from "./vendor/slider.js";
 import swiperReviews from "./vendor/slider.js";
 import {initTabs} from "./vendor/init-tabs.js";
 import {initAccordions} from './vendor/init-accordion.js';
-import scrollPage from "./scroll.js";
+import formValidate from "./validate.js";
 playVideo();
-renderPlan();
-scrollPage();
+showPlan();
+formValidate();
 swiper;
 swiperReviews;
 

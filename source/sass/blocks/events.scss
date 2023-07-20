@@ -132,6 +132,8 @@
 
 .events__image {
   display: block;
+  width: 660px;
+  height: 500px;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -199,6 +201,7 @@
 
   .events__image {
     width: 100%;
+    height: auto;
   }
 
   .events__button {
@@ -223,5 +226,9 @@
     display: grid;
     grid-template-columns: 44px 2fr 29px 1fr 44px;
     width: 100%;
+  }
+
+  .events__image {
+    height: auto;
   }
 }

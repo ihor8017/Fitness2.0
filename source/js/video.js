@@ -7,10 +7,18 @@ const playVideo = function () {
 
   playButton.addEventListener('click', (evt) =>{
     evt.preventDefault;
-    video.style.display = "block";
-    video.src = "https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=1";
+    let source = video.getAttribute('href');
+    video.remove();
     videoPlayer.querySelector(".video-player__control").style.display = "none";
+    const newIframe = document.createElement('iframe');
+    newIframe.classList.add("video-player__video");
+    newIframe.style.display = "block";
+    newIframe.src = source;
+    newIframe.title = "YouTube video player";
+    newIframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    newIframe.allowFullscreen = true;
     previewer.style.display = "none";
+    videoPlayer.appendChild (newIframe);
   });
 };
 

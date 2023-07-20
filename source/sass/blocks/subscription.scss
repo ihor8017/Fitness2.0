@@ -1,5 +1,6 @@
 .subscription {
   background: $SecondaryLight;
+  scroll-behavior: smooth;
 }
 
 .subscription__wrapper {
@@ -82,6 +83,16 @@
   gap: 40px;
   margin: 0;
   padding: 0;
+}
+
+.subscription__plan--one,
+.subscription__plan--six,
+.subscription__plan--twelve {
+  display: none;
+}
+
+.subscription__plan--current {
+  display: flex;
 }
 
 .subscription__plan-item {

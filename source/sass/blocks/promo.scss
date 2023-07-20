@@ -21,7 +21,7 @@
 
   span:last-child {
     display: block;
-    margin-bottom: 33px;
+    margin-bottom: 40px;
     font-size: 70px;
   }
 }
@@ -70,12 +70,12 @@
 }
 
 .promo__item-wrapper {
-  padding: 34px 45px 43px;
+  padding: 34px 42px 45px;
   background: $BannerColor;
   height: min-content;
 
   .promo__description {
-    margin-bottom: 196px;
+    margin-bottom: 186px;
     font-size: 18px;
   }
 
@@ -104,6 +104,9 @@
 
 .promo__image {
   display: inline-block;
+  width: 280px;
+  height: 462px;
+  object-fit: cover;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -142,6 +145,10 @@
     width: calc(100% - 399px);
     margin-bottom: 6px;
     padding-bottom: 45.5px;
+
+    .promo__description {
+      margin-bottom: 187px;
+    }
   }
 
   .promo__title {
@@ -154,6 +161,11 @@
     .promo__link {
       line-height: normal;
     }
+  }
+
+  .promo__image {
+    width: 399px;
+    height: 462px;
   }
 }
 
@@ -218,6 +230,6 @@
 
   .promo__image {
     width: 100%;
-    aspect-ratio: 1 / 1.03;
+    height: auto;
   }
 }

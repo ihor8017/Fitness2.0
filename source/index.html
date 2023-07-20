@@ -5,9 +5,12 @@
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
   </head>
-  <body class="page__body">
+  <body>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__info">
@@ -18,13 +21,13 @@
           <nav class="header-navigation">
             <ul class="header-navigation__list">
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="gym.html">Тренажёрный зал</a>
+                <a class="header-navigation__link link" href="#">Тренажёрный зал</a>
               </li>
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="group-lessons.html">Групповые занятия</a>
+                <a class="header-navigation__link link" href="#">Групповые занятия</a>
               </li>
               <li class="header-navigation__item" >
-                <a class="header-navigation__link link" href="cardio-zone.html">Кардио-зона</a>
+                <a class="header-navigation__link link" href="#">Кардио-зона</a>
               </li>
             </ul>
           </nav>
@@ -35,7 +38,7 @@
             <source type="img/webp" media="(min-width: 1200px)" srcset="img/header/superman-desktop@1x.webp 1x, img/header/superman-desktop@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/header/superman-desktop@1x.jpg 1x, img/header/superman-desktop@2x.jpg 2x">
             <source type="img/webp" srcset="img/header/superman-tablet@1x.webp 1x, img/header/superman-tablet@2x.webp 2x">
-            <img class="header__image" src="img/header/superman-tablet@1x.jpg" srcset="img/header/superman-tablet@2x.jpg 2x" alt="Мужчина в футболке со значком супермена на груди">
+            <img class="header__image" src="img/header/superman-tablet@1x.jpg" srcset="img/header/superman-tablet@2x.jpg 2x" width="324" height="390" alt="Мужчина в футболке со значком супермена на груди">
           </picture>
         </div>
       </div>
@@ -58,22 +61,23 @@
           <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/gym-tablet@1x.webp 1x, img/gym/gym-tablet@2x.webp 2x">
           <source media="(min-width: 768px)" srcset="img/gym/gym-tablet@1x.jpg 1x, img/gym/gym-tablet@2x.jpg 2x">
           <source type="img/webp" srcset="img/gym/gym-mobile@1x.webp 1x, img/gym/gym-mobile@2x.webp 2x">
-          <img class="gym__image" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
+          <img class="gym__image" src="img/gym/gym-mobile@1x.jpg" srcset="img/gym/gym-mobile@2x.jpg 2x" width="320" height="313" alt="Светлый и большой тренажерный зал">
         </picture>
         <div class="video-player">
           <div class="video-player__container">
-            <iframe class="video-player__video" src="#" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <a class="video-player__video" href="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=1"></a>
             <picture>
               <source type="img/webp" media="(min-width: 1200px)" srcset="img/gym/videopreview-desktop@1x.webp 1x, img/gym/videopreview-desktop@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gym/videopreview-desktop@1x.jpg 1x, img/gym/videopreview-desktop@2x.jpg 2x">
               <source type="img/webp" media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.webp 1x, img/gym/videopreview-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/gym/videopreview-tablet@1x.jpg 1x, img/gym/videopreview-tablet@2x.jpg 2x">
               <source type="img/webp" srcset="img/gym/videopreview-mobile@1x.webp 1x, img/gym/videopreview-mobile@2x.webp 2x">
-              <img class="gym__video" src="img/gym/videopreview-mobile@1x.jpg" srcset="img/gym//videopreview-mobile@2x.jpg 2x" alt="Светлый и большой тренажерный зал">
+              <img class="gym__video" src="img/gym/videopreview-mobile@1x.jpg" srcset="img/gym//videopreview-mobile@2x.jpg 2x" width="320" height="167" alt="Светлый и большой тренажерный зал">
             </picture>
             <div class="video-player__control">
               <button class="video-player__play" type="button">
                 <span class="video-player__control-play"></span>
+                <span class="visually-hidden">Нажмите, чтобы посмотреть видео</span>
               </button>
             </div>
           </div>
@@ -93,26 +97,68 @@
               <button class="subscription__button link" type="button" data-id ="12">12 месяцев</button>
             </li>
           </ul>
-          <ul class="subscription__plan">
+          <ul class="subscription__plan subscription__plan--one subscription__plan--current">
             <li class="subscription__plan-item card">
               <p class="card__title">С тренером</p>
               <p class="card__schedule">12 занятий</p>
               <p class="card__price"><span>5000</span><span>5000</span><span>₽</span></p>
-              <a class="card__button button link" href="abonement.html">купить абонемент</a>
+              <a class="card__button button link" href="#">купить абонемент</a>
             </li>
             <li class="subscription__plan-item card">
               <p class="card__title">Дневной</p>
               <p class="card__schedule">с 8:00 до 17:00</p>
               <p class="card__price"><span>1700</span><span>1700</span><span>₽</span></p>
-              <a class="card__button button link" href="abonement.html">купить абонемент</a>
+              <a class="card__button button link" href="#">купить абонемент</a>
             </li>
             <li class="subscription__plan-item card">
               <p class="card__title">Полный день</p>
               <p class="card__schedule">с 8:00 до 22:00</p>
               <p class="card__price"><span>2700</span><span>2700</span><span>₽</span></p>
-              <a class="card__button button link" href="abonement.html">купить абонемент</a>
+              <a class="card__button button link" href="#">купить абонемент</a>
             </li>
           </ul>
+
+          <ul class="subscription__plan subscription__plan--six">
+            <li class="subscription__plan-item card">
+              <p class="card__title">Худеем</p>
+              <p class="card__schedule">с 15:00 до 22:00</p>
+              <p class="card__price"><span>9000</span><span>9000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+            <li class="subscription__plan-item card">
+              <p class="card__title">Дневной</p>
+              <p class="card__schedule">с 8:00 до 17:00</p>
+              <p class="card__price"><span>12000</span><span>12000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+            <li class="subscription__plan-item card">
+              <p class="card__title">Полный день</p>
+              <p class="card__schedule">с 8:00 до 22:00</p>
+              <p class="card__price"><span>18000</span><span>18000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+          </ul>
+          <ul class="subscription__plan subscription__plan--twelve">
+            <li class="subscription__plan-item card">
+              <p class="card__title">Худеем</p>
+              <p class="card__schedule">с 15:00 до 22:00</p>
+              <p class="card__price"><span>17000</span><span>17000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+            <li class="subscription__plan-item card">
+              <p class="card__title">Утренний</p>
+              <p class="card__schedule">с 8:00 до 13:00</p>
+              <p class="card__price"><span>20000</span><span>20000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+            <li class="subscription__plan-item card">
+              <p class="card__title">Полный день</p>
+              <p class="card__schedule">с 8:00 до 22:00</p>
+              <p class="card__price"><span>18000</span><span>18000</span><span>₽</span></p>
+              <a class="card__button button link" href="#">купить абонемент</a>
+            </li>
+          </ul>
+
         </div>
       </section>
       <section class="events">
@@ -135,7 +181,7 @@
             <source type="img/webp" media="(min-width: 768px)" srcset="img/events/supergame-tablet@1x.webp 1x, img/events/supergame-tablet@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/events/supergame-tablet@1x.jpg 1x, img/events/supergame-tablet@2x.jpg 2x">
             <source type="img/webp" srcset="img/events/supergame-mobile@1x.webp 1x, img/events/supergame-mobile@2x.webp 2x">
-            <img class="events__image" src="img/events/supergame-mobile@1x.jpg" srcset="img/events/supergame-mobile@2x.jpg 2x" alt="Мужчина опёршийся двумя руками о землю, ударом правой поднял вверх столб белой пыли">
+            <img class="events__image" src="img/events/supergame-mobile@1x.jpg" srcset="img/events/supergame-mobile@2x.jpg 2x" width="290" height="292" alt="Мужчина опёршийся двумя руками о землю, ударом правой поднял вверх столб белой пыли">
           </picture>
       </section>
       <section class="trainers">
@@ -148,7 +194,7 @@
               <div class="trainer">
                 <picture>
                   <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" alt="">
+                  <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
                 </picture>
                 <p class="trainer__name">Анна Павлова</p>
                 <div class="trainer__info">
@@ -165,7 +211,7 @@
               <div class="trainer">
                 <picture>
                   <source type="img/webp" srcset="img/trainer/trainer2-desktop@1x.webp 1x, img/trainer/trainer2-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer2-desktop@1x.jpg" srcset="img/trainer/trainer2-desktop@2x.jpg 2x" alt="">
+                  <img class="trainer__image" src="img/trainer/trainer2-desktop@1x.jpg" srcset="img/trainer/trainer2-desktop@2x.jpg 2x" width="226" height="274" alt="">
                 </picture>
                 <p class="trainer__name">Алексей Лавров</p>
                 <div class="trainer__info">
@@ -182,7 +228,7 @@
               <div class="trainer">
                 <picture>
                   <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" alt="">
+                  <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
                 </picture>
                 <p class="trainer__name">Александр Пашков</p>
                 <div class="trainer__info">
@@ -199,7 +245,7 @@
               <div class="trainer">
                 <picture>
                   <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" alt="">
+                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
                 </picture>
                 <p class="trainer__name">Мария Кетова</p>
                 <div class="trainer__info">
@@ -216,7 +262,7 @@
               <div class="trainer">
                 <picture>
                   <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" alt="">
+                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
                 </picture>
                 <p class="trainer__name">Мария Кетова</p>
                 <div class="trainer__info">
@@ -234,7 +280,7 @@
             <div class="trainer">
               <picture>
                 <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" alt="">
+                <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
               </picture>
               <p class="trainer__name">Александр Пашков</p>
               <div class="trainer__info">
@@ -251,7 +297,7 @@
             <div class="trainer">
               <picture>
                 <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" alt="">
+                <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
               </picture>
               <p class="trainer__name">Александр Пашков</p>
               <div class="trainer__info">
@@ -268,7 +314,7 @@
             <div class="trainer">
               <picture>
                 <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
-                <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" alt="">
+                <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
               </picture>
               <p class="trainer__name">Анна Павлова</p>
               <div class="trainer__info">
@@ -330,7 +376,7 @@
             <div class="promo__item-wrapper">
               <p class="promo__title"><span>Год</span><span>4999</span></p>
               <p class="promo__description">Безлимитный абонемент <span>в&nbsp;тренажерный зал</span></p>
-              <a class="promo__link link" href="#instock.html">подробнее</a>
+              <a class="promo__link link" href="#">подробнее</a>
             </div>
             <picture>
               <source type="img/webp" media="(min-width: 1200px)" srcset="img/instock/stock-desktop@1x.webp 1x, imginstock/stock-desktop@2x.webp 2x">
@@ -338,18 +384,18 @@
               <source type="img/webp" media="(min-width: 768px)" srcset="img/instock/stock-tablet@1x.webp 1x, img/instock/stock-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/instock/stock-tablet@1x.jpg 1x, img/instock/stock-tablet@2x.jpg 2x">
               <source type="img/webp" srcset="img/instock/stock-mobile@1x.webp 1x, img/instock/stock-mobile@2x.webp 2x">
-              <img class="promo__image" src="img/instock/stock-mobile@1x.jpg" srcset="img/instock/stock-mobile@2x.jpg 2x" alt="">
+              <img class="promo__image" src="img/instock/stock-mobile@1x.jpg" srcset="img/instock/stock-mobile@2x.jpg 2x" width="290" height="299" alt="">
             </picture>
           </li>
           <li class="promo__item promo__item--month">
             <p class="promo__title">Месяц бесплатно</p>
             <p class="promo__description">Приведи друга, получи <span>абонемент в&nbsp; подарок</span></p>
-            <a class="promo__link link" href="#instock.html">подробнее</a>
+            <a class="promo__link link" href="#">подробнее</a>
           </li>
           <li class="promo__item promo__item--sale">
             <p class="promo__title">Скидка 20%</p>
             <p class="promo__description">Корпоративный фитнес с&nbsp;командой</p>
-            <a class="promo__link link" href="#instock.html">подробнее</a>
+            <a class="promo__link link" href="#">подробнее</a>
           </li>
         </ul>
       </section>
@@ -505,7 +551,7 @@
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
                       <source type="img/webp" srcset="img/reviews/reviews-mobile@1x.webp 1x, img/reviews/reviews-mobile@2x.webp 2x">
-                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" alt="">
+                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" width="68" height="68" alt="">
                     </picture>
                       <p class="review-card__name">Анна Орлова</p>
                       <p class="review-card__text">&laquo;Хожу в&nbsp;SuperClub уже больше года.
@@ -521,7 +567,7 @@
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
                       <source type="img/webp" srcset="img/reviews/reviews-mobile@1x.webp 1x, img/reviews/reviews-mobile@2x.webp 2x">
-                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" alt="">
+                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" width="68" height="68" alt="">
                     </picture>
                       <p class="review-card__name">Елена Орлова</p>
                       <p class="review-card__text">&laquo;Хожу в&nbsp;SuperClub уже больше года.
@@ -537,7 +583,7 @@
                       <source type="img/webp" media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.webp 1x, img/reviews/reviews-desktop@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/reviews/reviews-desktop@1x.png 1x, img/reviews/reviews-desktop@2x.png 2x">
                       <source type="img/webp" srcset="img/reviews/reviews-mobile@1x.webp 1x, img/reviews/reviews-mobile@2x.webp 2x">
-                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" alt="">
+                      <img class="review-card__image" src="img/reviews/reviews-mobile@1x.png" srcset="img/reviews/reviews-mobile@2x.png 2x" width="68" height="68" alt="">
                     </picture>
                       <p class="review-card__name">Наталья Орлова</p>
                       <p class="review-card__text">&laquo;Хожу в&nbsp;SuperClub уже больше года.
@@ -557,12 +603,12 @@
       <div class="footer__wrapper">
         <div class="lesson">
           <h2 class="lesson__title">Бесплатное занятие </h2>
-          <form class="form-lesson">
+          <form class="form-lesson" method="post" action="">
             <label class="form-lesson__name"><span class="visually-hidden">Имя</span>
-              <input type="text" name="name" value="Имя" placeholder="Имя">
+              <input type="text" name="name" placeholder="Имя">
             </label>
             <label class="form-lesson__phone"><span class="visually-hidden">Телефон</span>
-              <input type="tel" name="phone"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}--[0-9]{2}" value="8-800-555-55-55" placeholder="Телефон">
+              <input type="tel" name="phone"  placeholder="Телефон">
             </label>
             <button class="form-lesson__button button" type="submit">отправить</button>
           </form>
@@ -599,24 +645,24 @@
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item footer-navigation__item--hidden">empty</li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link link" href="service.html">Услуги</a>
+              <a class="footer-navigation__link link" href="#">Услуги</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link link" href="subscriptions.html">Абонементы</a>
+              <a class="footer-navigation__link link" href="#">Абонементы</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link link" href="instock.html">Акции</a>
+              <a class="footer-navigation__link link" href="#">Акции</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link link" href="trainers.html">Тренеры</a>
+              <a class="footer-navigation__link link" href="#">Тренеры</a>
             </li>
             <li class="footer-navigation__item">
-              <a class="footer-navigation__link link" href="schedule.html">Расписание</a>
+              <a class="footer-navigation__link link" href="#">Расписание</a>
             </li>
           </ul>
           <ul class="social">
             <li class="social__item">
-              <a class="social__Link" href="https://vk.com/">
+              <a class="social__link" href="https://vk.com/">
                 <svg width="12" height="12">
                   <use xlink:href="img/icons/stack.svg#vk"></use>
                 </svg>
@@ -624,7 +670,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__Link" href="https://ok.ru/">
+              <a class="social__link" href="https://ok.ru/">
                 <svg width="15" height="15">
                   <use xlink:href="img/icons/stack.svg#ok"></use>
                 </svg>
@@ -632,7 +678,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__Link" href="https://www.reddit.com/">
+              <a class="social__link" href="https://www.reddit.com/">
                 <svg width="15" height="15">
                   <use xlink:href="img/icons/stack.svg#reddit"></use>
                 </svg>

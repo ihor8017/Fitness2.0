@@ -26,7 +26,7 @@
 .form-lesson input:focus,
 .form-lesson input:active {
   outline: 1px solid rgba($BaseWhite, $alpha: 1);
-  border: none;
+  border-bottom: 1px solid rgba($BaseWhite, $alpha: 0);
   border-radius: none;
 }
 
@@ -35,14 +35,7 @@
   grid-column-end: 2;
 
   ::placeholder {
-    transform: translateX(-10px);
     color: rgba($BaseWhite, $alpha: 1);
-  }
-}
-
-.form-lesson__name:active {
-  ::placeholder {
-    color: rgba($BaseWhite, 0);
   }
 }
 
@@ -51,15 +44,19 @@
   grid-column-end: 3;
 
   ::placeholder {
-    transform: translateX(-10px);
     color: rgba($BaseWhite, $alpha: 1);
   }
 }
 
-.form-lesson__phone:focus {
-  ::placeholder {
-    color: rgba($BaseWhite, $alpha: 0);
-  }
+.form-lesson__name.has-danger input,
+.form-lesson__phone.has-danger input {
+  border-bottom: 1px solid rgba($ErrorColor, $alpha: 1);
+}
+
+.form-lesson__name--errore,
+.form-lesson__phone--errore {
+  position: absolute;
+  color: $ErrorColor;
 }
 
 .form-lesson__button {

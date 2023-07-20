@@ -24,17 +24,28 @@
   border-radius: 50%;
   background: $BaseWhite;
   color: $BaseColor;
+}
 
-  svg {
-    display: block;
+.social__link {
+  display: block;
+  margin-top: 9px;
+  width: 25px;
+  height: 25px;
+  padding: 7px;
+  color: $FooterColor;
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: $BaseSecondary;
+
+  .social__link {
+    color: $BaseWhite;
   }
 }
 
-.social_link {
-  display: block;
-  width: 25px;
-  height: 25px;
-  padding: 10px;
+.social__item:active {
+  background-color: $BaseColor;
 }
 
 @media (max-width: $tablet-maxwidth) {
