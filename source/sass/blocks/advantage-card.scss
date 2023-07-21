@@ -9,9 +9,11 @@
   span:first-child {
     font-size: 71px;
     font-weight: 700;
+    color: #d10a42;
+    /* Для градиентной заливки букв
     background-image: linear-gradient(#d10a42, #0041ca);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
 
   span:last-child {
@@ -53,9 +55,7 @@
   margin-bottom: 2px;
   font-size: 74px;
   line-height: 100%;
-  background-image: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: $BaseWhite;
+  color: $BaseWhite;
 }
 
 .advantage-card__info--centered span:last-child {

@@ -34,12 +34,13 @@
 @import "blocks/faq-content";
 @import "blocks/reviews";
 @import "blocks/review-card";
+@import "blocks/swiper-reviews";
+@import "blocks/swiper";
 
 /* VENDOR */
-@import "vendor/swiper";
 @import "vendor/tabs";
 @import "vendor/data-tabs";
 @import "vendor/data-accordion";
 @import "vendor/accordion";
-@import "vendor/swiper-reviews";
-@import "vendor/swiper-bundle.min";
+@import "vendor/swiper-vars";
+@import "vendor/swiper";

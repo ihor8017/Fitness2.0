@@ -1,0 +1,102 @@
+.swiper {
+  width: 100%;
+  height: 294px;
+  box-sizing: border-box;
+}
+
+.trainers .swiper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.swiper__button-prev,
+.swiper__button-next {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  position: absolute;
+  box-sizing: border-box;
+  top: 41%;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba($BaseColor, $alpha: 0);
+  border-radius: 50%;
+  content: "";
+  z-index: 210;
+}
+
+.swiper__button-prev:hover,
+.swiper__button-next:hover,
+.swiper__button-prev:focus,
+.swiper__button-next:focus, {
+  border: 1px solid $BaseColor;
+}
+
+.swiper__button-prev:active,
+.swiper__button-next:active {
+  border-color: $BaseColor;
+  background: $BaseColor;
+}
+
+.swiper__button-next {
+  left: 95%;
+}
+
+.swiper__button-prev::after,
+.swiper__button-next::after {
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  width: 16px;
+  height: 30px;
+  background: $BaseGrey;
+  z-index: 11;
+  content: "";
+}
+
+.swiper__button-prev::after {
+  mask-image: url("../../img/trainer/arrow-prev.svg");
+}
+
+.swiper__button-next::after {
+  mask-image: url("../../img/trainer/arrow-next.svg");
+}
+
+.swiper__button-prev:active.swiper__button-prev::after,
+.swiper__button-next:active.swiper__button-next::after {
+  background: $BaseWhite;
+}
+
+@media (max-width: $tablet-maxwidth) {
+  .swiper {
+    width: 90%;
+  }
+
+  .swiper__button-next {
+    left: 90.8%;
+  }
+}
+
+@media (max-width: $mobile-maxwidth) {
+  .swiper {
+    height: 274px;
+    width: 290px;
+  }
+
+  .swiper__button-prev,
+  .swiper__button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper__button-prev::after,
+  .swiper__button-next::after {
+    width: 10px;
+    height: 20px;
+    top: 5px;
+    left: 8.5px;
+  }
+
+  .swiper__button-next {
+    left: 67%;
+  }
+}

@@ -7,7 +7,10 @@
 }
 
 .trainers__title {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $BaseColor;
   margin: 0;
   margin-bottom: 48px;
   padding-left: 20px;

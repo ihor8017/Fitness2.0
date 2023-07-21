@@ -9,7 +9,10 @@
 }
 
 .advantages__title {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $BaseColor;
   margin: 0;
   margin-bottom: 72px;
   font-size: 54px;

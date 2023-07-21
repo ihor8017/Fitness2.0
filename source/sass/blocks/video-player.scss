@@ -82,7 +82,7 @@
 
 .video-player__play:hover.video-player__play::after,
 .video-player__play:focus.video-player__play::after {
-    background: $BaseColor;
+  background: $BaseColor;
 }
 
 .video-player__play:active.video-player__play::before {

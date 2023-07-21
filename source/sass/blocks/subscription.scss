@@ -9,10 +9,14 @@
   padding-top: 125px;
   padding-bottom: 123px;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .subscription__title {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: $BaseColor;
   margin: 0;
   padding: 0;
   margin-bottom: 17px;

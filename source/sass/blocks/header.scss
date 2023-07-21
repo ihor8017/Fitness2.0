@@ -40,7 +40,9 @@
 }
 
 .header__town {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   grid-column-start: 2;
   grid-column-end: 3;
   margin: 0;
@@ -56,7 +58,9 @@
 }
 
 .header__title {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   grid-column-start: 2;
   grid-column-end: 3;
   padding-right: 5px;

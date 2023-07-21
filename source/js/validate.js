@@ -22,9 +22,7 @@ const formValidate = () => {
     evt.preventDefault();
     const isValid = pristine.validate();
     if (isValid) {
-      console.log('Можно отправлять');
-    } else {
-      console.log('Форма невалидна');
+      formLesson.reset();
     }
   });
 

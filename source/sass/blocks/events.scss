@@ -22,7 +22,9 @@
 }
 
 .events__title {
-  @extend %title-logofont;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   grid-column: 2 / 3;
