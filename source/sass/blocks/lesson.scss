@@ -1,10 +1,14 @@
 .lesson {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  width: 410px;
-  padding: 56px 170px 56px 103px;
+  width: 33%;
+  padding: 56px 183px 67px;
+  padding-left: 20px;
   color: $BaseWhite;
   background: $BaseColor;
+}
+
+.lesson__wrapper {
+  margin-left: auto;
+  width: 410px;
 }
 
 .lesson__title {
@@ -25,6 +29,10 @@
     grid-column-end: 1;
     box-sizing: border-box;
     padding: 54px 163px 70px 133px;
+    width: 100%;
+  }
+
+  .lesson__wrapper {
     width: 100%;
   }
 

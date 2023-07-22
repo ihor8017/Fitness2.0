@@ -1,7 +1,7 @@
 .footer-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 38px 103px;
+  padding: 38px 20px;
   width: $desktop-width;
   box-sizing: border-box;
   margin: 0 auto;
@@ -72,6 +72,7 @@
     box-sizing: border-box;
     width: 100%;
     display: grid;
+    gap: 7px;
     grid-template-columns: 1fr 1fr;
   }
 

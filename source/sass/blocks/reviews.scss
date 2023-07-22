@@ -70,6 +70,23 @@
   background: $BaseWhite;
 }
 
+.reviews__slider {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews__slider-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reviews__slide .review-card {
+  padding: 0;
+  width: 560px;
+}
+
 @media (max-width: $tablet-maxwidth) {
   .reviews {
     padding-top: 92px;
@@ -84,6 +101,15 @@
 
   .reviews__button-next {
     left: 682px;
+  }
+
+  .reviews__slider {
+    width: 100%;
+  }
+
+  .reviews__slide .review-card {
+    padding: 0;
+    width: 566px;
   }
 }
 
@@ -125,5 +151,10 @@
     background: $BaseGrey;
     z-index: 12;
     content: "";
+  }
+
+  .reviews__slide .review-card {
+    padding: 0;
+    width: 226px;
   }
 }

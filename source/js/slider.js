@@ -1,5 +1,6 @@
-import Swiper from './swiper-bundle.js';
-
+import Swiper from './vendor/swiper-bundle.js';
+import changeClass from "./change-class.js";
+changeClass();
 const swiper = new Swiper('.swiper', {
   loop: true,
   navigation: {
