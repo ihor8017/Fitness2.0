@@ -45,6 +45,18 @@
   letter-spacing: 0.6px;
 }
 
+
+.promo__link:hover {
+  opacity: 0.6;
+}
+
+.promo__link:focus {
+  outline:  1px solid #1c3374;
+  padding: 10px;
+  border-bottom: 1px solid rgba(#1c3374, 0);
+}
+
+
 .promo__item {
   padding: 14px 28px 27px;
   box-sizing: border-box;
@@ -85,6 +97,11 @@
     font-size: 14px;
     letter-spacing: 0.7px;
     border-bottom: 1px solid $BaseWhite;
+  }
+
+  .promo__link:focus {
+    outline:  1px solid $BaseWhite;
+    border-bottom: 1px solid rgba($BaseWhite, 0);
   }
 }
 
