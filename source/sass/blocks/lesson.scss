@@ -1,5 +1,6 @@
 .lesson {
-  width: 33%;
+  width: 50%;
+  box-sizing: border-box;
   padding: 56px 183px 67px;
   padding-left: 20px;
   color: $BaseWhite;
@@ -27,7 +28,6 @@
   .lesson {
     grid-column-start: 1;
     grid-column-end: 1;
-    box-sizing: border-box;
     padding: 54px 163px 70px 133px;
     width: 100%;
   }
@@ -45,7 +45,7 @@
 
 @media (max-width: $mobile-maxwidth) {
   .lesson {
-    padding: 57px 15px 70px;
+    padding: 57px 15px 69px;
     min-width: $mobile-width;
     width: 100%;
   }

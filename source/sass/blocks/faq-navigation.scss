@@ -16,7 +16,7 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   padding-top: 18px;
   color: $BaseColor;
   text-transform: none;
@@ -25,6 +25,7 @@
   line-height: 100%;
   border: none;
   outline: 1px solid rgba(16, 38, 84, 0.2);
+  cursor: pointer;
 }
 
 .faq-navigation__button:hover,
@@ -59,7 +60,7 @@
 
 @media (max-width: $mobile-maxwidth) {
   .faq-navigation {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .faq-navigation__button {

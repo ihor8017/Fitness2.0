@@ -12,6 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 26px;
   padding: 0;
   list-style: none;
   color: $BaseWhite;
@@ -72,7 +73,7 @@
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    gap: 7px;
+    gap: 0;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -85,9 +86,24 @@
     width: 100%;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
-    row-gap: 8px;
+    row-gap: 5px;
     column-gap: 10px;
     margin-bottom: 26px;
+    margin-left: 0;
+  }
+
+  .footer-navigation__item:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .footer-navigation__item:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .footer-navigation__link {
+    font-size: 16px;
   }
 
   .footer-navigation__item--hidden {

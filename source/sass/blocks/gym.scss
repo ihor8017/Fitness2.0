@@ -62,7 +62,9 @@
   margin: 0;
   margin-bottom: 5px;
   line-height: 150%;
-  letter-spacing: -0.4px;
+  color: $BaseColor;
+  font-weight: 300;
+  letter-spacing: -0.1px;
 }
 
 .gym__description--part1 {
@@ -71,7 +73,7 @@
 
 @media (max-width: $tablet-maxwidth) {
   .gym {
-    padding: 90px 45px;
+    padding: 95px 45px;
     padding-bottom: 158px;
     min-width: $tablet-width;
     width: 100%;
@@ -152,8 +154,13 @@
   }
 
   .gym__description {
+    padding-right: 30px;
     text-align: left;
     letter-spacing: 0;
+  }
+
+  .gym__description--part1 {
+    margin-bottom: 3px;
   }
 
   .gym__image {

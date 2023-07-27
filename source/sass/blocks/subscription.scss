@@ -6,7 +6,7 @@
 .subscription__wrapper {
   max-width: $desktop-width;
   margin: 0 auto;
-  padding-top: 125px;
+  padding-top: 121px;
   padding-bottom: 123px;
   text-align: center;
   scroll-behavior: smooth;
@@ -38,7 +38,7 @@
     width: 100%;
     top: 40px;
     left: 0;
-    height: 3px;
+    height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
     content: "";
   }
@@ -61,11 +61,13 @@
   background: none;
   font-size: 20px;
   color: rgba($BaseColor, 0.5);
-  border-bottom: 3px solid rgba($BannerColor, 0);
+  border-bottom: 2px solid rgba($BannerColor, 0);
+  cursor: pointer;
 }
 
 .subscription__button--active {
-  border-bottom: 3px solid $BannerColor;
+  color: $BaseColor;
+  border-bottom: 2px solid $BannerColor;
 }
 
 .subscription__button:hover,
@@ -73,7 +75,7 @@
 .subscription__button:active {
   color: rgba($BaseColor, 1);
   box-sizing: border-box;
-  border-bottom: 3px solid $BannerColor;
+  border-bottom: 2px solid $BannerColor;
 }
 
 .subscription__button:disabled {
@@ -100,6 +102,7 @@
 }
 
 .subscription__plan-item {
+  position: relative;
   list-style: none;
 }
 
@@ -168,6 +171,6 @@
   }
 
   .subscription__plan {
-    gap: 36px;
+    gap: 34px;
   }
 }

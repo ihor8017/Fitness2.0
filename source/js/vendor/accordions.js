@@ -27,6 +27,7 @@ export class Accordions {
     }
 
     const element = target.closest('[data-accordion="element"]');
+
     if (element.classList.contains('is-active')) {
       this.closeAccordion(element);
       return;

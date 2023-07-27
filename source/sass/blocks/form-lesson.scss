@@ -9,8 +9,7 @@
   input {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
-    padding-bottom: 8px;
+    padding: 8px 10px 6px;
     letter-spacing: -0.8px;
     color: $BaseWhite;
     background: none;
@@ -63,6 +62,7 @@
   grid-column-end: 3;
   font-size: 14px;
   padding-bottom: 13px;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -80,7 +80,7 @@
   .form-lesson {
     width: 100%;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 33px;
   }
 
   .form-lesson__phone {

@@ -6,11 +6,13 @@
   padding-bottom: 87px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background: $BaseWhite;
-  border: 6px solid rgba($SecondaryMain, 0);
+  border: 6px solid $BaseWhite;
+  z-index: 100;
 }
 
 .card:hover {
   border: 6px solid $SecondaryMain;
+  border-image: linear-gradient(#D10A42, #00359F) 30;
 
   .card__button {
     border: none;
@@ -35,7 +37,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  color: #495a7d;
+  color: $BaseColor;
 }
 
 .card__price {
@@ -78,6 +80,38 @@
   border-color: $BaseColor;
 }
 
+.card .card__button:hover,
+.card .card__button:focus {
+  background: $BaseWhite;
+  border-color: $BaseWhite;
+  color: $BaseSecondary;
+}
+
+.card .card__button:active {
+  background: $BaseWhite;
+  border-color: $BaseWhite;
+  color: $BaseColor;
+}
+
+.card:last-child.card::before {
+  position: absolute;
+  bottom: -271px;
+  right: -100px;
+  width: 287px;
+  height: 494px;
+  background-size: contain;
+  content: "";
+  z-index: -100;
+  background-image: url("../../img/subscriptionbg-desktop@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    width: 287px;
+    height: 494px;
+    background-size: 287px 494px;
+    background-image: url("../../img/subscriptionbg-desktop@2x.png");
+  }
+}
+
 @media (max-width: $tablet-maxwidth) {
   .card {
     width: 442px;
@@ -99,6 +133,11 @@
 
   .card__title {
     font-size: 22px;
+  }
+
+  .card:hover .card__button {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .card__schedule {

@@ -7,13 +7,12 @@
 
 .advantage-card__info {
   span:first-child {
+    margin-left: 5px;
     font-size: 71px;
     font-weight: 700;
-    color: #d10a42;
-    /* Для градиентной заливки букв
     background-image: linear-gradient(#d10a42, #0041ca);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
   }
 
   span:last-child {
@@ -27,9 +26,10 @@
 
 .advantage-card__title {
   margin: 0;
+  margin-bottom: 10px;
   font-size: 22px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 120%;
   color: $BaseColor;
 }
 
@@ -45,6 +45,7 @@
   padding: 38px 34px 62px;
 }
 
+
 .advantage-card__info--centered span:last-child,
 .advantage-card--centered .advantage-card__description {
   color: $BaseWhite;
@@ -53,9 +54,10 @@
 .advantage-card__info--centered span:first-child {
   display: block;
   margin-bottom: 2px;
+  margin-left: 0;
   font-size: 74px;
   line-height: 100%;
-  color: $BaseWhite;
+  -webkit-text-fill-color: $BaseWhite;
 }
 
 .advantage-card__info--centered span:last-child {
@@ -69,12 +71,18 @@
 }
 
 @media (max-width: $tablet-maxwidth) {
+  .advantage-card {
+    gap: 30px;
+  }
+
   .advantage-card__info span:first-child {
     font-size: 58px;
   }
 
   .advantage-card__title {
     font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 5px;
   }
 
   .advantage-card--centered {

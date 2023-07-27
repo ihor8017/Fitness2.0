@@ -1,12 +1,6 @@
 .logo {
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: normal;
-  letter-spacing: 0.72px;
-  color: $BaseWhite;
+  width: 122px;
+  height: 44px;
 }
 
 .logo:hover,
@@ -19,15 +13,17 @@
 }
 
 @media (max-width: $tablet-maxwidth) {
-  .logo {
-    font-size: 24px;
-    letter-spacing: 0.48px;
+  .logo svg {
+    width: 82px;
+    height: 17px;
+    margin-top: 10px;
   }
 }
 
 @media (max-width: $mobile-maxwidth) {
-  .logo {
-    font-size: 20px;
-    letter-spacing: 0.4px;
+  .logo svg {
+    width: 69px;
+    height: 24px;
+    margin-top: -1px;
   }
 }

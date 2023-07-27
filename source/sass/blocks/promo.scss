@@ -9,7 +9,7 @@
 
 .promo__title {
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
   font-size: 26px;
   font-weight: 700;
   line-height: 156%;
@@ -53,12 +53,20 @@
 .promo__link:focus {
   outline:  1px solid #1c3374;
   padding: 10px;
+  margin-left: -10px;
   border-bottom: 1px solid rgba(#1c3374, 0);
 }
 
+.promo__link:active {
+  border-bottom: 1px solid rgba(#1c3374, 1);
+  outline: none;
+  padding: 0;
+  margin-left: 0;
+  opacity: 1;
+}
 
 .promo__item {
-  padding: 14px 28px 27px;
+  padding: 18px 28px 27px;
   box-sizing: border-box;
   border: 7px solid;
   border-image-slice: 5;
@@ -83,7 +91,9 @@
 
 .promo__item-wrapper {
   padding: 34px 42px 45px;
+  width: 280px;
   padding-right: 30px;
+  box-sizing: border-box;
   background: $BannerColor;
   height: min-content;
 
@@ -102,6 +112,14 @@
   .promo__link:focus {
     outline:  1px solid $BaseWhite;
     border-bottom: 1px solid rgba($BaseWhite, 0);
+  }
+
+  .promo__link:active {
+    outline: none;
+    padding: 0;
+    margin-left: 0;
+    border-bottom: 1px solid $BaseWhite;
+    opacity: 1;
   }
 }
 
@@ -171,6 +189,7 @@
 
   .promo__title {
     font-size: 26px;
+    margin-bottom: 2px;
 
     span:last-child {
       margin-bottom: 39px;
@@ -189,13 +208,13 @@
 
 @media (max-width: $mobile-maxwidth) {
   .promo__item {
-    padding: 27px 43px 37px;
+    padding: 27px 38px 37px;
     text-align: center;
     margin-bottom: 2px;
   }
 
   .promo__title {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 
     span:last-child {
       margin-bottom: 32px;
@@ -214,14 +233,16 @@
   }
 
   .promo__item-wrapper {
+    padding-top: 40px;
     padding-bottom: 45px;
+    padding-left: 30px;
     width: 100%;
     margin-bottom: 0;
     box-sizing: border-box;
     text-align: center;
 
     .promo__description {
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
   }
 

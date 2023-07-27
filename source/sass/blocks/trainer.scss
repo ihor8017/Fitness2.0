@@ -86,8 +86,15 @@
   .trainer__name {
     position: absolute;
     bottom: 30px;
-    left: 100px;
+    left: 136px;
   }
+
+.trainer:hover .trainer__name,
+.trainer:focus .trainer__name {
+  top: 55px;
+  left: 50%;
+}
+
 }
 
 @media (max-width: $mobile-maxwidth) {
@@ -96,7 +103,7 @@
   }
 
   .trainer__info {
-    width: 224px;
+    width: 226px;
     padding-top: 67px;
   }
 
