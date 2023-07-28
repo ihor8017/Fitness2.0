@@ -98,15 +98,17 @@
 
 @media (max-width: $mobile-maxwidth) {
   .trainer {
-    width: 224px;
+    width: 100%;
+    aspect-ratio: 226 / 274;
   }
 
   .trainer__name {
-    left: 113px;
+    left: 50%;
   }
 
   .trainer__info {
-    width: 226px;
+    width: 100%;
+    aspect-ratio: 226 / 274;
     padding-top: 67px;
   }
 
@@ -124,8 +126,9 @@
   }
 
   .trainer__image {
-    width: 226px;
-    height: 274px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 226 / 274;
     object-fit: cover;
   }
 }

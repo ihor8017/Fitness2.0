@@ -74,8 +74,9 @@
 
 @media (max-width: $mobile-maxwidth) {
   .swiper {
-    height: 274px;
-    width: 226px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 226 / 274;
   }
 
   .swiper__button-prev,
@@ -93,6 +94,6 @@
   }
 
   .swiper__button-next {
-    left: 195px;
+    left: calc(100% - 31px);
   }
 }

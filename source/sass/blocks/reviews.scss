@@ -129,7 +129,7 @@
   .reviews__button-next {
     position: absolute;
     box-sizing: border-box;
-    top: 153px;
+    top: 50%;
     left: 1px;
     border-radius: 50%;
     width: 30px;
@@ -139,7 +139,7 @@
   }
 
   .reviews__button-next {
-    left: 280px;
+    left: calc(100% - 30px);
   }
 
   .reviews__button-prev::after,

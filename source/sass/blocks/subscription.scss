@@ -1,7 +1,7 @@
 .subscription {
   background: $SecondaryLight;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: clip;
 }
 
 .subscription__wrapper {

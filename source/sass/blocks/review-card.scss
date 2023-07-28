@@ -63,16 +63,17 @@
 
 @media (max-width: $mobile-maxwidth) {
   .review-card {
-    width: 310px;
-    padding-left: 42px;
-    padding-right: 42px;
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   .review-card__wrapper {
-    grid-template-columns: 80px 80px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 16px;
-    width: 226px;
+    width: 100%;
     padding: 40px 25px;
+    padding-bottom: 32px;
   }
 
   .review-card__name {
@@ -91,6 +92,7 @@
   .review-card__image {
     width: 68px;
     height: 68px;
-    margin-left: 16px;
+    padding-left: 0;
+    margin-left: 21%;
   }
 }
