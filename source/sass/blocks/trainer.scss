@@ -89,17 +89,20 @@
     left: 136px;
   }
 
-.trainer:hover .trainer__name,
-.trainer:focus .trainer__name {
-  top: 55px;
-  left: 50%;
-}
-
+  .trainer:hover .trainer__name,
+  .trainer:focus .trainer__name {
+    top: 55px;
+    left: 50%;
+  }
 }
 
 @media (max-width: $mobile-maxwidth) {
   .trainer {
     width: 224px;
+  }
+
+  .trainer__name {
+    left: 113px;
   }
 
   .trainer__info {

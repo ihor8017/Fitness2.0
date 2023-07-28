@@ -12,7 +12,7 @@
 
 .card:hover {
   border: 6px solid $SecondaryMain;
-  border-image: linear-gradient(#D10A42, #00359F) 30;
+  border-image: linear-gradient(#d10a42, #00359f) 30;
 
   .card__button {
     border: none;
@@ -91,25 +91,6 @@
   background: $BaseWhite;
   border-color: $BaseWhite;
   color: $BaseColor;
-}
-
-.card:last-child.card::before {
-  position: absolute;
-  bottom: -271px;
-  right: -100px;
-  width: 287px;
-  height: 494px;
-  background-size: contain;
-  content: "";
-  z-index: -100;
-  background-image: url("../../img/subscriptionbg-desktop@1x.png");
-
-  @media (min-resolution: 2dppx) {
-    width: 287px;
-    height: 494px;
-    background-size: 287px 494px;
-    background-image: url("../../img/subscriptionbg-desktop@2x.png");
-  }
 }
 
 @media (max-width: $tablet-maxwidth) {

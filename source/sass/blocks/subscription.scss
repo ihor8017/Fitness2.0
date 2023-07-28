@@ -1,6 +1,7 @@
 .subscription {
   background: $SecondaryLight;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .subscription__wrapper {
@@ -83,12 +84,29 @@
 }
 
 .subscription__plan {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin: 0;
   padding: 0;
+}
+
+.subscription__plan::after {
+  position: absolute;
+  background-image: url("../../img/subscriptionbg-desktop@1x.png");
+  background-size: 287px 494px;
+  width: 287px;
+  height: 494px;
+  bottom: -269px;
+  right: -79px;
+  content: "";
+
+  @media (min-resolution: 2dppx) {
+    background-size: 287px 494px;
+    background-image: url("../../img/subscriptionbg-desktop@2x.png");
+  }
 }
 
 .subscription__plan--one,
@@ -107,6 +125,10 @@
 }
 
 @media (max-width: $tablet-maxwidth) {
+  .subscription {
+    overflow: visible;
+  }
+
   .subscription__wrapper {
     padding-top: 100px;
     padding-left: 163px;
@@ -130,6 +152,22 @@
 
   .subscription__button {
     letter-spacing: -1px;
+  }
+
+  .subscription__plan::after {
+    position: absolute;
+    background-image: url("../../img/subscriptionbg-tablet@1x.png");
+    background-size: 287px 494px;
+    width: 347px;
+    height: 444px;
+    bottom: -224px;
+    right: -163px;
+    content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-size: 347px 444px;
+      background-image: url("../../img/subscriptionbg-tablet@2x.png");
+    }
   }
 }
 
@@ -172,5 +210,9 @@
 
   .subscription__plan {
     gap: 34px;
+  }
+
+  .subscription__plan::after {
+    display: none;
   }
 }
