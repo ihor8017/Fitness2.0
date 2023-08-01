@@ -29,7 +29,10 @@
 }
 
 .faq-navigation__button:hover,
-.faq-navigation__button:focus,
+.faq-navigation__button:focus {
+  outline: 1px solid $BaseColor;
+}
+
 .faq-navigation__button.is-active {
   color: $BaseWhite;
   background: linear-gradient(151deg, $BannerColor 0%, $SecondaryColor 100%);

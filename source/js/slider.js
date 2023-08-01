@@ -46,4 +46,7 @@ const swiperReviews = new Swiper('.swiper-reviews', {
   }
 })
 
+const nextButton = document.querySelector('.reviews__button-next');
+const prevButton = document.querySelector('.reviews__button-prev');
+
 export default {swiper, swiperReviews} ;

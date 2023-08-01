@@ -71,6 +71,31 @@
   background: $BaseWhite;
 }
 
+.reviews__button-prev.swiper-button-disabled,
+.reviews__button-next.swiper-button-disabled,
+.reviews__button-prev:hover.swiper-button-disabled,
+.reviews__button-next:hover.swiper-button-disabled,
+.reviews__button-prev:focus.swiper-button-disabled,
+.reviews__button-next:focus.swiper-button-disabled,
+.reviews__button-prev:active.swiper-button-disabled,
+.reviews__button-next:active.swiper-button-disabled {
+  border: none;
+  background: none;
+  opacity: 0.3;
+}
+
+.swiper-button-disabled.reviews__button-prev::after,
+.swiper-button-disabled.reviews__button-next::after,
+.swiper-button-disabled.reviews__button-prev:hover.reviews__button-prev::after,
+.swiper-button-disabled.reviews__button-next:hover.reviews__button-next::after,
+.swiper-button-disabled.reviews__button-prev:focus.reviews__button-prev::after,
+.swiper-button-disabled.reviews__button-next:focus.reviews__button-next::after,
+.swiper-button-disabled.reviews__button-prev:active.reviews__button-prev::after,
+.swiper-button-disabled.reviews__button-next:active.reviews__button-next::after {
+  background: $BaseColor;
+  opacity: 0.3;
+}
+
 .reviews__slider {
   width: 1200px;
   margin: 0 auto;

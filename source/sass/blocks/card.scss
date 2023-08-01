@@ -13,12 +13,6 @@
 .card:hover {
   border: 6px solid $SecondaryMain;
   border-image: linear-gradient(#d10a42, #00359f) 30;
-
-  .card__button {
-    border: none;
-    color: $BaseWhite;
-    background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
-  }
 }
 
 .card__title {
@@ -80,17 +74,17 @@
   border-color: $BaseColor;
 }
 
-.card .card__button:hover,
-.card .card__button:focus {
-  background: $BaseWhite;
-  border-color: $BaseWhite;
-  color: $BaseSecondary;
+.card__button:hover,
+.card__button:focus {
+  border: none;
+  color: $BaseWhite;
+  background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
 }
 
 .card .card__button:active {
-  background: $BaseWhite;
-  border-color: $BaseWhite;
-  color: $BaseColor;
+  background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
+  border: none;
+  color: rgba($BaseWhite, 0.6);
 }
 
 @media (max-width: $tablet-maxwidth) {

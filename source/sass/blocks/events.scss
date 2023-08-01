@@ -15,7 +15,7 @@
   padding-top: 87px;
   padding-bottom: 85px;
   display: grid;
-  grid-template-columns: 78px 2fr 50px 1fr 78px;
+  grid-template-columns: 78px 1fr 50px 1fr 78px;
   width: 500px;
   height: min-content;
   color: $BaseWhite;
@@ -27,7 +27,8 @@
   font-style: normal;
   font-weight: 600;
   margin: 0;
-  margin-right: auto;
+  margin-right: 0;
+  margin-left: auto;
   padding: 0;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
@@ -110,7 +111,7 @@
 }
 
 .events__info-time {
-  display: inline;
+  display: inline-block;
   margin: 0;
   font-size: 40px;
   font-weight: 700;
@@ -150,14 +151,15 @@
     padding-top: 51px;
     padding-bottom: 51px;
     display: grid;
-    grid-template-columns: 45px 2fr 29px 1fr 45px;
+    grid-template-columns: 45px 1fr 13px 1fr 45px;
     width: 38%;
   }
 
   .events__title {
+    padding-bottom: 8px;
     font-size: 48px;
     letter-spacing: 1.44px;
-    padding-bottom: 8px;
+    text-align: right;
 
     span {
       display: block;
@@ -191,15 +193,24 @@
 
   .events__day {
     margin-bottom: 19px;
+    padding-left: 29px;
+  }
+
+  .events__time {
+    padding-left: 29px;
   }
 
   .events__info-time {
+    display: flex;
+    width: min-content;
     font-size: 24px;
   }
 
   .events__period {
-    font-size: 12px;
     margin-bottom: 27px;
+    margin-left: -17px;
+    text-align: center;
+    font-size: 12px;
   }
 
   .events__image {
@@ -227,11 +238,27 @@
     padding-top: 51px;
     padding-bottom: 52px;
     display: grid;
-    grid-template-columns: 44px 2fr 29px 1fr 44px;
+    grid-template-columns: 44px 1fr 13px 1fr 44px;
     width: 100%;
   }
 
   .events__image {
     height: auto;
+  }
+
+  .events__period {
+    margin-bottom: 27px;
+    text-align: center;
+    margin-left: -17px;
+    font-size: 12px;
+  }
+
+  .events__day,
+  .events__time {
+    padding-left: 29px;
+  }
+
+  .events__time .events__info {
+    margin-top: -12px;
   }
 }

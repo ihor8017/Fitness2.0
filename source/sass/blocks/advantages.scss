@@ -37,6 +37,10 @@
   margin-bottom: 73px;
 }
 
+.advantages__item:first-child span:first-child {
+  background-image: linear-gradient(129deg, #d10a42 -10%, #0041ca 60%);
+}
+
 .advantages__item--square {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
