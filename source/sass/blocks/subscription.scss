@@ -95,7 +95,10 @@
 
 .subscription__plan::after {
   position: absolute;
-  background: url("../../img/subscription.png") no-repeat center;
+  background: image-set(
+    url("../../img/subscription.png") type("image/png"),
+    url("../../img/subscription.webp") type("image/webp")
+    ) no-repeat center;
   background-size: 321px 384px;
   width: 321px;
   height: 384px;
