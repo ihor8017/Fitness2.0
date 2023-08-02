@@ -17,11 +17,6 @@
   width: 260px;
 }
 
-.slider__button-next,
-.slider__button-prev {
-  display: none;
-}
-
 @media (max-width: $tablet-maxwidth) {
   .slider {
     width: 100%;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="img/subscription.png" as="image">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
@@ -190,150 +191,154 @@
       </section>
       <section class="trainers">
         <h2 class="trainers__title">Тренеры</h2>
-        <div class="slider">
-          <!-- Additional required wrapper -->
-          <div class="slider__wrapper">
-            <!-- Slides -->
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Анна Павлова</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
+        <div class="trainers__slider">
+          <div class="slider">
+            <!-- Additional required wrapper -->
+            <div class="slider__wrapper">
+              <!-- Slides -->
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Анна Павлова</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer2-desktop@1x.webp 1x, img/trainer/trainer2-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer2-desktop@1x.jpg" srcset="img/trainer/trainer2-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Алексей Лавров</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Александр Пашков</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Мария Кетова</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Мария Кетова</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Александр Пашков</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Александр Пашков</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__slide">
+                <div class="trainer">
+                  <picture>
+                    <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
+                    <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
+                  </picture>
+                  <p class="trainer__name">Анна Павлова</p>
+                  <div class="trainer__info">
+                    <p class="trainer__discipline">CrossFit</p>
+                    <ul class="trainer__skills-list">
+                      <li class="trainer__skills-item">Certified Level 3 Trainer</li>
+                      <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
+                      <li class="trainer__skills-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer2-desktop@1x.webp 1x, img/trainer/trainer2-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer2-desktop@1x.jpg" srcset="img/trainer/trainer2-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Алексей Лавров</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Александр Пашков</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Мария Кетова</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer4-desktop@1x.webp 1x, img/trainer/trainer4-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer4-desktop@1x.jpg" srcset="img/trainer/trainer4-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Мария Кетова</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Александр Пашков</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer3-desktop@1x.webp 1x, img/trainer/trainer3-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer3-desktop@1x.jpg" srcset="img/trainer/trainer3-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Александр Пашков</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="trainer">
-                <picture>
-                  <source type="img/webp" srcset="img/trainer/trainer1-desktop@1x.webp 1x, img/trainer/trainer1-desktop@2x.webp 2x">
-                  <img class="trainer__image" src="img/trainer/trainer1-desktop@1x.jpg" srcset="img/trainer/trainer1-desktop@2x.jpg 2x" width="226" height="274" alt="">
-                </picture>
-                <p class="trainer__name">Анна Павлова</p>
-                <div class="trainer__info">
-                  <p class="trainer__discipline">CrossFit</p>
-                  <ul class="trainer__skills-list">
-                    <li class="trainer__skills-item">Certified Level 3 Trainer</li>
-                    <li class="trainer__skills-item">Победитель чемпионата России по CrossFit </li>
-                    <li class="trainer__skills-item">Опыт — 6 лет</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <!-- If we need navigation buttons -->
           </div>
-          <!-- If we need navigation buttons -->
-          <div class="slider__button-prev"></div>
-          <div class="slider__button-next"></div>
+          <div class="trainers__slider-navigation slider-navigation">
+            <div class="slider-navigation__button-prev"></div>
+            <div class="slider-navigation__button-next"></div>
+          </div>
         </div>
       </section>
       <section class="advantages">

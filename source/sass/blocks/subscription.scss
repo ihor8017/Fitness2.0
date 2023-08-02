@@ -95,18 +95,15 @@
 
 .subscription__plan::after {
   position: absolute;
-  background-image: url("../../img/subscriptionbg-desktop@1x.png");
-  background-size: 287px 494px;
-  width: 287px;
-  height: 494px;
-  bottom: -269px;
-  right: -79px;
+  background: url("../../img/subscription.png") no-repeat center;
+  background-size: 321px 384px;
+  width: 321px;
+  height: 384px;
+  transform: rotate(330deg);
+  bottom: -214px;
+  right: -188px;//calc((100vw - 84%) / -2);
+  object-fit: contain;
   content: "";
-
-  @media (min-resolution: 2dppx) {
-    background-size: 287px 494px;
-    background-image: url("../../img/subscriptionbg-desktop@2x.png");
-  }
 }
 
 .subscription__plan--one,
@@ -125,10 +122,6 @@
 }
 
 @media (max-width: $tablet-maxwidth) {
-  .subscription {
-    overflow: visible;
-  }
-
   .subscription__wrapper {
     padding-top: 100px;
     padding-left: 163px;
@@ -156,18 +149,12 @@
 
   .subscription__plan::after {
     position: absolute;
-    background-image: url("../../img/subscriptionbg-tablet@1x.png");
-    background-size: 287px 494px;
-    width: 347px;
-    height: 444px;
-    bottom: -224px;
-    right: -163px;
+    background-size: 289px 345px;
+    width: 289px;
+    height: 345px;
+    bottom: -168px;
+    right: calc(50% - 389px);
     content: "";
-
-    @media (min-resolution: 2dppx) {
-      background-size: 347px 444px;
-      background-image: url("../../img/subscriptionbg-tablet@2x.png");
-    }
   }
 }
 
