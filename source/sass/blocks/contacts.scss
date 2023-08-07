@@ -46,6 +46,15 @@
   box-sizing: border-box;
   width: 235px;
   padding-left: 60px;
+
+  a:hover,
+  a:focus {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__item-title {
@@ -132,7 +141,7 @@
 
   .contacts__list {
     grid-template-columns: 1fr;
-    row-gap: 19px;
+    row-gap: 18px;
   }
 
   .contacts__item {

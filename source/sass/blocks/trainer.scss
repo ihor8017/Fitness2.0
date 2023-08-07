@@ -20,9 +20,10 @@
   box-sizing: border-box;
   height: 100%;
   width: 260px;
-  padding: 76px 10px 10px;
+  padding: 58px 10px 10px;
   text-align: center;
   background: rgba(16, 38, 84, 0.89);
+  overflow-y: scroll;
 }
 
 .trainer:hover .trainer__info,
@@ -34,7 +35,7 @@
 
 .trainer:hover .trainer__name,
 .trainer:focus .trainer__name {
-  top: 55px;
+  display: none;
 }
 
 .trainer__name {
@@ -47,6 +48,12 @@
   font-size: 18px;
   font-weight: 700;
   z-index: 12;
+}
+
+.trainer__info-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .trainer__discipline {
@@ -76,6 +83,7 @@
 
 @media (max-width: $tablet-maxwidth) {
   .trainer__info {
+    padding-top: 54px;
     width: 268px;
   }
 
@@ -109,20 +117,15 @@
   .trainer__info {
     width: 100%;
     aspect-ratio: 226 / 274;
-    padding-top: 67px;
-  }
-
-  .trainer:hover .trainer__name,
-  .trainer:focus .trainer__name {
-    top: 45px;
+    padding-top: 43px;
   }
 
   .trainer__discipline {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 
   .trainer__skills-list {
-    padding-left: 44px;
+    padding-left: 40px;
   }
 
   .trainer__image {

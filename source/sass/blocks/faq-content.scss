@@ -60,6 +60,7 @@
 .faq-content__button:hover,
 .faq-content__button:focus {
   background-color: $BaseColor;
+  outline: none;
 }
 
 .faq-content__button:hover.faq-content__button::after,
@@ -112,7 +113,7 @@
   }
 
   .faq-content__button {
-    top: 50%;
+    top: 44%;
     transform: translateY(-80%);
     right: 1.5px;
   }

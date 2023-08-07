@@ -31,6 +31,8 @@
 .faq-navigation__button:hover,
 .faq-navigation__button:focus {
   outline: 1px solid $BaseColor;
+  color: $BaseColor;
+  background: none;
 }
 
 .faq-navigation__button.is-active {
@@ -41,10 +43,10 @@
 
 @media (max-width: $tablet-maxwidth) {
   .faq-navigation {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .faq-navigation__item {
@@ -64,6 +66,7 @@
 @media (max-width: $mobile-maxwidth) {
   .faq-navigation {
     margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .faq-navigation__button {

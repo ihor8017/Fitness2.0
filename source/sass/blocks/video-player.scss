@@ -3,9 +3,8 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
   margin-left: 75px;
-  align-items: flex-end;
   justify-content: center;
 }
 
@@ -22,6 +21,7 @@
   position: relative;
   width: 364px;
   height: 228px;
+  top: 287px;
 }
 
 .video-player__control {
@@ -42,8 +42,6 @@
   box-sizing: border-box;
   stroke: linear-gradient($BannerColor, $SecondaryColor);
   background: url("../../img/play.svg");
-  // border: 2px solid $SecondaryMain;
-  // border-radius: 50%;
 }
 
 .video-player__play::before {
@@ -118,6 +116,7 @@
     grid-row-end: 4;
     margin-left: 0;
     margin-bottom: -58px;
+    align-items: flex-end;
   }
 
 
@@ -125,6 +124,7 @@
     position: relative;
     width: 40%;
     height: auto;
+    top: 0;
   }
 
   .video-player__video {

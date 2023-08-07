@@ -25,6 +25,15 @@
   padding-top: 30px;
 }
 
+.header__phones-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  max-width: 400px;
+  column-gap: 8px;
+}
+
 .header__main-block {
   position: relative;
   margin: 0 auto;
@@ -88,6 +97,7 @@
   height: auto;
   top: -22px;
   object-fit: cover;
+  z-index: 9;
 }
 
 @media (max-width: $tablet-maxwidth) {
@@ -163,6 +173,10 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 81px;
+  }
+
+  .header__phones-wrapper {
+    max-width: 120px;
   }
 
   .header__info {

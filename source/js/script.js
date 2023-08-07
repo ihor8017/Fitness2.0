@@ -25,3 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
 });
+
+document.addEventListener('click', (evt) => {
+  const target = evt.target;
+  if (target.closest('[data-accordion="button"]')) {
+    target.blur();
+  }
+});

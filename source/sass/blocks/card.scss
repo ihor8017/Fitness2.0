@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: inline;
   width: 360px;
-  padding: 57px 56px;
+  padding: 54px 56px;
   padding-bottom: 87px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   background: $BaseWhite;
@@ -13,11 +13,19 @@
 .card:hover {
   border: 6px solid $SecondaryMain;
   border-image: linear-gradient(#d10a42, #00359f) 30;
+
+  .card__button {
+    border: none;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    color: $BaseWhite;
+    background: linear-gradient(125deg, $BannerColor 0%, #003eb7 98%);
+  }
 }
 
 .card__title {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   font-weight: 700;
   line-height: 26px;
   font-size: 26px;
@@ -77,24 +85,37 @@
 .card__button:hover,
 .card__button:focus {
   border: none;
+  outline: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
   color: $BaseWhite;
-  background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
+  background: linear-gradient(125deg, $BannerColor 0%, #003eb7 98%);
 }
 
 .card .card__button:active {
-  background: linear-gradient(151deg, $BannerColor 0%, #003eb7 100%);
+  background: linear-gradient(125deg, #ed0233 0%, #003eb7 98%);
   border: none;
   color: rgba($BaseWhite, 0.6);
 }
 
 @media (max-width: $tablet-maxwidth) {
   .card {
-    width: 442px;
-    padding: 58px 56px 89px;
+    width: 100%;
+    padding: 55px 56px 59px;
+  }
+
+  .card__price {
+    margin-bottom: 33px;
   }
 
   .card__price span:first-child {
-    left: 58px;
+    left: 15%;
+  }
+
+  .card__button {
+    display: block;
+    width: 65.6%;
+    margin: 0 auto;
   }
 }
 
@@ -107,12 +128,8 @@
   }
 
   .card__title {
+    margin-bottom: 7px;
     font-size: 22px;
-  }
-
-  .card:hover .card__button {
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 
   .card__schedule {

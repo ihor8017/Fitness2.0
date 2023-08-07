@@ -137,12 +137,13 @@
 .events__image {
   display: block;
   width: 660px;
-  height: 500px;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: $tablet-maxwidth) {
   .events {
-    padding: 94px 0;
+    padding: 102px 0;
     padding-bottom: 49px;
     width: 100%;
   }
@@ -215,7 +216,7 @@
 
   .events__image {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .events__button {
@@ -229,7 +230,7 @@
 @media (max-width: $mobile-maxwidth) {
   .events {
     padding: 71px 15px;
-    padding-bottom: 50px;
+    padding-bottom: 49px;
     width: 100%;
     flex-direction: column;
   }

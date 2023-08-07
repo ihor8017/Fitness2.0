@@ -1,4 +1,5 @@
 .phone {
+  position: relative;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -6,6 +7,7 @@
   font-size: 26px;
   letter-spacing: 0.74px;
   color: $BaseWhite;
+  z-index: 10;
 }
 
 .phone:hover,

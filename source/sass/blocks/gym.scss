@@ -22,7 +22,7 @@
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 3;
   padding: 10px 60px 10px 60px;
 }
 
@@ -92,6 +92,7 @@
 
   .gym__text-wrapper {
     padding: 6px 88px 10px;
+    grid-row-end: 2;
   }
 
   .gym__title {

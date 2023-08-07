@@ -5,7 +5,7 @@ const LENGTH_PHONE_NUMBER = 11;
 const NAME_PATTERN = /^[\sa-zA-Zа-яёА-Я\-]{1,20}$/i;
 const formLesson = document.querySelector(".form-lesson");
 const inputName = formLesson.querySelector(".form-lesson__name input");
-const inputPhone = formLesson.querySelector(".form-lesson__phone input");
+const submitButton = formLesson.querySelector(".form-lesson__button");
 
 const formValidate = () => {
   const pristine = new Pristine(formLesson, {
@@ -15,8 +15,6 @@ const formValidate = () => {
   });
 
   const isValidName  = (value) => NAME_PATTERN.test(value) && (value.length <= 20);
-  // const isValidNumber = (value) => value.length == LENGTH_PHONE_NUMBER && Number.isInteger(+value);
-  const isValidNumber = () => phoneMask.unmaskedValue == LENGTH_PHONE_NUMBER;
   pristine.addValidator(inputName, isValidName, "неправильный формат или длина");
 
   formLesson.addEventListener('submit', (evt) => {
@@ -26,7 +24,5 @@ const formValidate = () => {
       formLesson.reset();
     }
   });
-
 }
-
 export default formValidate;

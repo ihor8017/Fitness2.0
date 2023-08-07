@@ -29,6 +29,11 @@
   border-radius: none;
 }
 
+.form-lesson input:focus::placeholder,
+.form-lesson input:active::placeholder {
+  color: transparent;
+}
+
 .form-lesson__name {
   grid-column-start: 1;
   grid-column-end: 2;
